@@ -1,17 +1,43 @@
-import React, { FC } from 'react';
+import React, {FC, useState} from 'react';
 import Link from 'next/link';
+import Dropdown from "./Dropdown";
 
-type NavItemProp = {
-  href: string;
+
+
+export interface NavItemProp {
   text: string;
-  active: boolean;
-};
+  href: string;
+  active?: boolean;
+  submenu?: NavItemProp[] | undefined;
+}
 
-const NavItem: FC<NavItemProp> = ({ href, text, active }) => {
+
+const NavItem: FC<NavItemProp> = ({href, active, submenu, text}:NavItemProp): JSX.Element => {
+
+  const [dropdown, serDropdown] = useState(false);
   return (
-    <Link href={href} className={`navLink ${active ? 'active' : ''}`}>
-        {text}
-    </Link>
+      <div className={'menu-items'}>
+        {
+          submenu ? (
+              <>
+              <button aria-expanded={dropdown ? "true" : "false"}
+                  onClick={() => serDropdown((prev) => !prev)}>
+                <Link href={href} className={`navLink ${active ? 'active' : ''}`}>
+                  {text}
+                </Link>
+              </button>
+                <Dropdown dropDownMenu={submenu} dropdown={dropdown}/>
+              </>
+          ) : (
+              <Link href={href} className={`navLink ${active ? 'active' : ''}`}>
+                {text}
+              </Link>
+          )
+        }
+
+
+      </div>
+
   );
 };
 

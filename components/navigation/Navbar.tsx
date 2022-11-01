@@ -1,13 +1,23 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import NavItem from './NavItem';
+import NavItem, {NavItemProp} from './NavItem';
 import Image from 'next/image';
 import udsLogo from '../../assets/uds-logo/uds_logo.webp';
 
-const menuList = [
+const menuList: Array<NavItemProp> = [
   {
     text: 'Services',
     href: '/services',
+    submenu : [
+      {
+        text: "UDS Customer Service",
+        href: "/services/uds-customer-service",
+      },
+      {
+        text: "UDS Sales Start",
+        href: "/services/uds-sales-start",
+      },
+    ]
   },
   {
     text: 'Our Cases',
@@ -16,6 +26,44 @@ const menuList = [
   {
     text: 'Add-ons',
     href: '/add-ons',
+    submenu : [
+      {
+        text: "UDS STORAGE ANALYZER",
+        href: "/add-ons/storage-analyzer",
+      },
+      {
+        text: "UDS VIRTUAL MACHINE",
+        href: "/add-ons/dynamics-365-virtual-machine",
+      },
+      {
+        text: "UDS MIGRATION CALCULATOR",
+        href: "/add-ons/migration-calculator",
+      },
+      {
+        text: "UDS DATA MIGRATION TOOL",
+        href: "/add-ons/data-migration-tool",
+      },
+      {
+        text: "UDS INTERFACE SWITCHER",
+        href: "/add-ons/interface-switcher",
+      },
+      {
+        text: "UDS BUG HANDLER",
+        href: "/add-ons/bug-handler",
+      },
+      {
+        text: "UDS LICENSE CALCULATOR",
+        href: "/add-ons/license-calculator",
+      },
+      {
+        text: "UDS DUPLICATE CHECKER",
+        href: "/add-ons/duplicate-checker",
+      },
+      {
+        text: "UDS BUSINESS DATA MASKING",
+        href: "/add-ons/business-data-masking",
+      },
+    ]
   },
   {
     text: 'Blog',
@@ -30,7 +78,6 @@ const menuList = [
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
   const [activeIdx, setActiveIdx] = useState(-1);
-
   return (
     <header className={'header'}>
       <nav className={'nav container'}>
@@ -45,14 +92,14 @@ const Navbar = () => {
         <div className={`${navActive ? 'active' : ''} menuList`}>
           {menuList.map((menu, idx) => {
             return (
-              <div
+              <div className={'menu-items'}
                 key={menu.text}
                 onClick={() => {
                   setActiveIdx(idx);
                   setNavActive(false);
                 }}
               >
-                <NavItem {...menu} active={activeIdx === idx} />
+                <NavItem text={menu.text} href={menu.href} submenu={menu.submenu} active={activeIdx === idx} />
               </div>
             );
           })}
