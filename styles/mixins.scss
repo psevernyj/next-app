@@ -1,0 +1,33 @@
+$orange-primary: #FF8F3E;
+$blue-primary: #383680;
+$black-primary: #1E2432;
+
+
+@mixin fonts($family, $weight, $size, $line-height ) {
+  font-family: $family;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+}
+
+.smallButton{
+  height: 40px;
+  width: auto;
+  padding: 0 18px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  @include fonts("Montserrat", 700, 12px, 15px);
+}
+
+.orangeButton{
+  background-color: $orange-primary;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.blueButton{
+  background-color: white;
+  color: $blue-primary;
+  border: 2px solid $blue-primary;
+}
