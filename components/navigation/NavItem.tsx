@@ -16,7 +16,7 @@ const NavItem: FC<NavItemProp> = ({href, active, submenu, text}:NavItemProp): JS
 
   const [dropdown, serDropdown] = useState(false);
   return (
-      <div className={'menu-items'}>
+      <div className={'menu-items mainItems'}>
         {
           submenu ? (
               <>

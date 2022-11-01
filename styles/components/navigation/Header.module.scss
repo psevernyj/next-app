@@ -17,9 +17,9 @@
     flex-direction: column;
     position: fixed;
     top: 100px;
-    width: 375px;
+    width: 100%;
     row-gap: 24px;
-    right: -375px;
+    right: 100%;
     min-height: 100vh;
     transition: all 0.3s;
     background-color: white;
@@ -47,22 +47,17 @@
     @include fonts("Montserrat", 500, 16px, 20px);
     position: relative;
     transition: all 0.2s;
-
-
-  }
-
-  .center {
-    min-height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .menuActions {
     margin-top: 20px;
+    padding-left: 20px;
     display: flex;
     align-items: center;
     gap: 10px;
+  }
+  .mainItems{
+    padding-left: 20px;
   }
   .dropdown{
     .subLink{
@@ -128,7 +123,9 @@
 
     .menu-items {
       position: relative;
+      padding-left: 0;
     }
+
     .dropdown {
       position: absolute;
       left: -41px;
