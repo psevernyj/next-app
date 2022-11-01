@@ -21,7 +21,10 @@ const NavItem: FC<NavItemProp> = ({href, active, submenu, text}:NavItemProp): JS
           submenu ? (
               <>
               <button aria-expanded={dropdown ? "true" : "false"}
-                  onClick={() => serDropdown((prev) => !prev)}>
+                   // onMouseDown={() => serDropdown(true)}
+                   // onMouseLeave={() => serDropdown(false)}
+                  onClick={() => serDropdown((prev) => !prev)}
+              >
                 <Link href={href} className={`navLink ${active ? 'active' : ''}`}>
                   {text}
                 </Link>

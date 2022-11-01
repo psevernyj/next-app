@@ -72,6 +72,20 @@ const menuList: Array<NavItemProp> = [
   {
     text: 'Contact Us',
     href: '/contact-us',
+    submenu : [
+      {
+        text: "UDS Systems",
+        href: "https://wa.me/message/WWXS4JHYO3VKF1",
+      },
+      {
+        text: "info@uds.systems",
+        href: "mailto:info@uds.systems",
+      },
+      {
+        text: "uds.systems",
+        href: "skype:live:uds_ddt?chat",
+      },
+    ]
   },
 ];
 
