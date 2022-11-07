@@ -1,0 +1,25 @@
+@import "mixins";
+
+.firstScreen {
+  background-color: $blue-primary;
+
+  .content {
+    padding: 143px 0 90px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    text-align: center;
+    justify-items: center;
+    color: $white;
+    .title{
+      @include fonts("Gilroy-Light", 400, 46px, 150%);
+    }
+    .subtitle{
+      @include fonts("Montserrat", 600, 22px, 130%);
+    }
+    .partnerLogo{
+      width: 302px;
+      height: 143px;
+    }
+  }
+}

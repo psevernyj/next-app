@@ -1,5 +1,6 @@
-@import "styles/components/navigation/Header.module";
-@import "styles/components/navigation/Footer.module";
+@import "components/navigation/navbar";
+@import "components/navigation/footer";
+@import "homePage";
 
 html,
 body {
@@ -30,13 +31,9 @@ a {
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
+
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
   all: unset;
   display: revert;
@@ -124,7 +121,7 @@ meter {
 //@font-face {
 //  font-family: "Gilroy-Light";
 //  font-display: swap;
-//  src: url("assets/fonts/Gilroy-Light.otf");
+//  src: url("fonts/Gilroy-Light.woff2");
 //}
 //
 ////500
