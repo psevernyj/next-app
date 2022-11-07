@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from "next/image";
-// import headerBg from "../assets/home-page/home_page_header_bg.webp";
+
 import partnership from "../assets/home-page/header_microsoft_partner_logo.webp";
 
 const RootComponent: NextPage = () => {
@@ -14,13 +14,43 @@ const RootComponent: NextPage = () => {
       </Head>
       <main className={"main"}>
           <div className={"firstScreen"}>
-              {/*<Image className={"headerBackground"} src={headerBg} alt={"background"}*/}
-              {/*       quality={100}/>*/}
               <div className={"content container"}>
                   <h1 className={"title"}>Grow your company`s potential with transparent reporting and empowering tools</h1>
                   <p className={"subtitle"}>Explore our products and services built on Microsoft Dynamics 365, PowerApps and AzureCloud.</p>
                   <Image className={"partnerLogo"} src={partnership} alt={"Microsoft partner: Gold Data Analytics"}/>
               </div>
+          </div>
+          <div className={"companyInfo"}>
+              <ul className="container">
+                  <li className="item">
+                      <p className="number">
+                          <span className="hash"># </span>
+                          <span className="text">15</span>
+                      </p>
+                      <span className="description">Years on the market</span>
+                  </li>
+                  <li className="item">
+                      <p className="number">
+                          <span className="hash"># </span>
+                          <span className="text">80+</span>
+                      </p>
+                      <span className="description">Professionals onboard</span>
+                  </li>
+                  <li className="item">
+                      <p className="number">
+                          <span className="hash"># </span>
+                          <span className="text">70+</span>
+                      </p>
+                      <span className="description">Projects in Europe</span>
+                  </li>
+                  <li className="item">
+                      <p className="number">
+                          <span className="hash"># </span>
+                          <span className="text">90-100</span>
+                      </p>
+                      <span className="description">Features per month</span>
+                  </li>
+              </ul>
           </div>
       </main>
     </div>

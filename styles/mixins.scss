@@ -3,6 +3,9 @@ $blue-primary: #383680;
 $black-primary: #1E2432;
 $white: #FFFFFF;
 
+$dark-bg: #E8EBFE;
+$light-bg: #F9FAFF;
+
 @mixin fonts($family, $weight, $size, $line-height ) {
   font-family: $family;
   font-weight: $weight;
