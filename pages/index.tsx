@@ -9,8 +9,8 @@ const RootComponent: NextPage = () => {
     <div>
       <Head>
         <title>Home | UDS Systems</title>
-          <meta property="og:title" key="title" content="UDS Systems - Microsoft Dynamics 365 & Power Apps Development"/>
-          <meta name="og:description" key="description" content="UDS Systems is a team of skilled professionals who specialized in Microsoft Dynamics 365 ERP/CRM and Power Apps development. Microsoft implementation partner." />
+          <meta property="title" key="title" content="UDS Systems - Microsoft Dynamics 365 & Power Apps Development"/>
+          <meta name="description" key="description" content="UDS Systems is a team of skilled professionals who specialized in Microsoft Dynamics 365 ERP/CRM and Power Apps development. Microsoft implementation partner." />
       </Head>
       <main className={"main"}>
           <div className={"firstScreen"}>
