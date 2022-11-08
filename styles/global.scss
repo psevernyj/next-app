@@ -32,6 +32,24 @@ a {
 .main {
   min-height: 100vh;
   flex: 1;
+
+  .pageTitle{
+    @include fonts("Gilroy-Light", 400, 46px, 120%);
+    color: $blue-primary;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .pageSubtitle{
+    @include fonts("Montserrat", 600, 24px, 29px);
+    color: $blue-primary;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .section{
+    padding: 60px 0 90px;
+  }
 }
 
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {

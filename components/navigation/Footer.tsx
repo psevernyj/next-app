@@ -31,7 +31,7 @@ const Footer = () => {
                             <Link href={"/education"} className={"link"}>Education</Link>
                             <Link href={"/blog"} className={"link"}>Blog</Link>
                             <Link href={"/contact-us"} className={"link"}>Contact Us</Link>
-                            <a href={"https://my.uds.systems/add-ons"} target={"_blank"} className={"link"}>UDS
+                            <a href={"https://my.uds.systems/add-ons"} target={"_blank"} rel="noreferrer" className={"link"}>UDS
                                 Portal</a>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ const Footer = () => {
                     <div className={"column"}>
                         <div className={"contact"}>
                             <Image src={whatsapp} alt={"whatsapp"}/>
-                            <a href="https://wa.me/message/WWXS4JHYO3VKF1" className={"link"} target="_blank">UDS
+                            <a href="https://wa.me/message/WWXS4JHYO3VKF1" className={"link"} target="_blank" rel="noreferrer">UDS
                                 Systems</a>
                         </div>
                         <div className={"contact"}>
@@ -78,22 +78,22 @@ const Footer = () => {
                         <Link className={"link"} href={"/terms-and-conditions"}>Terms and conditions</Link>
                     </div>
                     <div className={"socialMedia"}>
-                        <a aria-label="Join our Twitter" href="https://twitter.com/UDS_systems" target="_blank">
+                        <a aria-label="Join our Twitter" href="https://twitter.com/UDS_systems" target="_blank" rel="noreferrer">
                             <Image src={twitter} alt={"Twitter"}/>
                         </a>
                         <a aria-label="Join our LinkedIn" href="https://www.linkedin.com/company/uds-systems"
-                           target="_blank">
+                           target="_blank" rel="noreferrer">
                             <Image src={linkedIn} alt={"LinkedIn"}/>
                         </a>
-                        <a aria-label="Join our Facebook" href="https://www.facebook.com/UDS.systems/" target="_blank">
+                        <a aria-label="Join our Facebook" href="https://www.facebook.com/UDS.systems/" target="_blank" rel="noreferrer">
                             <Image src={facebook} alt={"Facebook"}/>
                         </a>
                         <a aria-label="Join our Youtube" href="https://www.youtube.com/channel/UCx443BQ2U4gGXLPYB8Nu3bg"
-                           target="_blank">
+                           target="_blank" rel="noreferrer">
                             <Image src={youtube} alt={"YouTube"}/>
                         </a>
                         <a aria-label="Join our Instagram"
-                           href="https://www.instagram.com/uds.systems/?igshid=YmMyMTA2M2Y%3D" target="_blank">
+                           href="https://www.instagram.com/uds.systems/?igshid=YmMyMTA2M2Y%3D" rel="noreferrer" target="_blank">
                             <Image src={insta} alt={"Instagram"}/>
                         </a>
                     </div>

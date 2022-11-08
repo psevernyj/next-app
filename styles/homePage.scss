@@ -154,3 +154,29 @@
     }
   }
 }
+
+.services{
+  .serviceCases{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    .service{
+      background-color: $light-bg;
+      border-radius: 5px;
+      padding: 20px 24px;
+      width: 100%;
+      min-height: 400px;
+      display: grid;
+      grid-template-rows: 0.5fr 0.5fr 3fr;
+      grid-gap: 24px;
+      .title{
+        @include fonts("Montserrat", 600, 20px, 24px);
+        color: $blue-primary;
+      }
+      .subtitle{
+        @include fonts("Montserrat", 500, 16px, 140%);
+        color: $black-primary;
+      }
+    }
+  }
+}
