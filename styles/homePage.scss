@@ -155,12 +155,13 @@
   }
 }
 
-.services{
-  .serviceCases{
+.services {
+  .serviceCases {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
-    .service{
+
+    .service {
       background-color: $light-bg;
       border-radius: 5px;
       padding: 20px 24px;
@@ -169,13 +170,54 @@
       display: grid;
       grid-template-rows: 0.5fr 0.5fr 3fr;
       grid-gap: 24px;
-      .title{
+
+      .title {
         @include fonts("Montserrat", 600, 20px, 24px);
         color: $blue-primary;
       }
-      .subtitle{
+
+      .subtitle {
         @include fonts("Montserrat", 500, 16px, 140%);
-        color: $black-primary;
+        color: $gray-primary;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 40px;
+      .service {
+        min-height: 320px;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      grid-gap: 20px;
+    }
+    @media screen and (max-width: 550px) {
+      grid-template-columns: 1fr;
+
+      .service {
+        min-height: 290px;
+        padding: 30px;
+        grid-gap: 10px;
+
+        .gearIcon {
+          margin-bottom: 14px;
+        }
+      }
+    }
+  }
+
+  .serviceAction {
+    .subtitle {
+      @include fonts("Montserrat", 600, 20px, 24px);
+      color: $blue-primary;
+      text-align: center;
+      padding: 40px 0 44px;
+
+      @media screen and (max-width: 450px) {
+        font-size: 17px;
+        line-height: 21px;
+        padding-bottom: 40px;
       }
     }
   }

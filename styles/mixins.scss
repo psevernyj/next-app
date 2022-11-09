@@ -1,6 +1,7 @@
 $orange-primary: #FF8F3E;
 $blue-primary: #383680;
 $black-primary: #1E2432;
+$gray-primary: #6B7C8A;
 $white: #FFFFFF;
 
 $dark-bg: #E8EBFE;
@@ -13,24 +14,40 @@ $light-bg: #F9FAFF;
   line-height: $line-height;
 }
 
+.button{
+  text-transform: uppercase;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .smallButton{
+  padding: 0 18px;
   height: 40px;
   width: auto;
-  padding: 0 18px;
-  border-radius: 5px;
-  text-transform: uppercase;
   @include fonts("Montserrat", 700, 12px, 15px);
 }
 
+.bigButton{
+  height: 64px;
+  width: 317px;
+  padding: 0 18px;
+  @include fonts("Montserrat", 700, 16px, 20px);
+}
+
 .orangeButton{
-  background-color: $orange-primary;
+  background: linear-gradient(269.64deg, #FF8F3E 4.23%, #FFB178 91.19%);
   color: white;
   display: flex;
   align-items: center;
+  border-radius: 5px;
   gap: 10px;
 }
+
 .blueButton{
   background-color: white;
   color: $blue-primary;
   border: 2px solid $blue-primary;
+  border-radius: 5px;
 }
