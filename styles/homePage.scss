@@ -100,7 +100,7 @@
         }
 
         .text {
-          @include fonts("Montserrat", 600, 46px, 150%);
+          @include fonts("Gilroy-Medium", 600, 46px, 150%);
 
           @media screen and (max-width: 1024px) {
             font-size: 22px;
@@ -219,6 +219,37 @@
         line-height: 21px;
         padding-bottom: 40px;
       }
+    }
+  }
+}
+
+.implementedProducts {
+  background-color: $light-bg;
+  .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .column{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .product {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+
+    .title {
+      @include fonts("Montserrat", 600, 19px, 23px);
+      color: $blue-primary;
+    }
+  }
+  @media screen and (max-width: 450px){
+    img{
+      width: 26px;
+      height: 26px;
     }
   }
 }

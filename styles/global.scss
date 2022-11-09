@@ -38,6 +38,7 @@ a {
     color: $blue-primary;
     text-align: center;
     padding-bottom: 40px;
+    text-transform: capitalize;
     @media screen and (max-width: 450px){
       font-size: 28px;
       padding-bottom: 20px;
@@ -49,6 +50,7 @@ a {
     color: $blue-primary;
     text-align: center;
     padding-bottom: 40px;
+
     @media screen and (max-width: 450px){
       font-size: 17px;
       line-height: 21px;

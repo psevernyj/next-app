@@ -1,10 +1,23 @@
+import React from "react";
 import type {NextPage} from 'next';
 import Head from 'next/head';
 import Image from "next/image";
 
 import partnership from "../assets/home-page/header_microsoft_partner_logo.webp";
 import gearIcon from "../assets/home-page/gear_icon.webp";
-import React from "react";
+import sales from "../assets/implemented-products/sales.webp";
+import customerService from "../assets/implemented-products/customer_service.webp";
+import fieldService from "../assets/implemented-products/field_service.webp";
+import projectSA from "../assets/implemented-products/projectSA.webp";
+import talent from "../assets/implemented-products/talent.webp";
+import commerce from "../assets/implemented-products/commerce.webp";
+import finance from "../assets/implemented-products/finance.webp";
+import business from "../assets/implemented-products/business.webp";
+import powerBI from "../assets/implemented-products/powerBI.webp";
+import powerApps from "../assets/implemented-products/powerApps.webp";
+import powerVA from "../assets/implemented-products/powerVA.webp";
+import powerAutomate from "../assets/implemented-products/powerAutomate.webp";
+
 
 const RootComponent: NextPage = () => {
     return (
@@ -114,8 +127,71 @@ const RootComponent: NextPage = () => {
                             </button>
                         </div>
                     </div>
-
-
+                </div>
+                <div className={"implementedProducts"}>
+                    <div className={"section"}>
+                        <h2 className={"pageTitle container"}>Microsoft Products that we implement</h2>
+                        <div className={"content container"}>
+                            <div className={"column"}>
+                                <div className={"product"}>
+                                    <Image src={sales} alt={"product"} width={44} height={44}/>
+                                    <p className={"title"}>Sales</p>
+                                </div>
+                                <div className={"product"}>
+                                    <Image src={customerService} alt={"product"} width={44} height={44}/>
+                                    <p className={"title"}>Customer Service</p>
+                                </div>
+                                <div className={"product"}>
+                                    <Image src={fieldService} alt={"product"} width={44} height={44}/>
+                                    <p className={"title"}>Field Service</p>
+                                </div>
+                                <div className={"product"}>
+                                    <Image src={projectSA} alt={"product"} width={44} height={44}/>
+                                    <p className={"title"}>Project Service Automation</p>
+                                </div>
+                                <div className={"product"}>
+                                    <Image src={talent} alt={"product"} width={44} height={44}/>
+                                    <p className={"title"}>Talent</p>
+                                </div>
+                            </div>
+                            <div className={"column"}>
+                                <div className={"product"}>
+                                    <Image src={commerce} alt={"product"} width={44} height={44}/>
+                                    <p className={"title"}>Commerce</p>
+                                </div>
+                                <div className={"product"}>
+                                    <Image src={finance} alt={"product"} width={44} height={44}/>
+                                    <p className={"title"}>Finance & Operations</p>
+                                </div>
+                                <div className={"product"}>
+                                    <Image src={business} alt={"product"} width={44} height={44}/>
+                                    <p className={"title"}>Business Central</p>
+                                </div>
+                            </div>
+                            <div className={"column"}>
+                                <div className={"product"}>
+                                    <Image src={powerBI} alt={"product"} width={44} height={44}/>
+                                    <p className={"title"}>Power BI</p>
+                                </div>
+                                <div className={"product"}>
+                                    <Image src={powerApps} alt={"product"} width={44} height={44}/>
+                                    <p className={"title"}>Power Apps</p>
+                                </div>
+                                <div className={"product"}>
+                                    <Image src={powerVA} alt={"product"} width={44} height={44}/>
+                                    <p className={"title"}>Power Virtual Agents</p>
+                                </div>
+                                <div className={"product"}>
+                                    <Image src={powerAutomate} alt={"product"} width={44} height={44}/>
+                                    <p className={"title"}>Power Automate</p>
+                                </div>
+                                <div className={"product"}>
+                                    <Image src={powerApps} alt={"product"} width={44} height={44}/>
+                                    <p className={"title"}>Power Apps Portal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>
