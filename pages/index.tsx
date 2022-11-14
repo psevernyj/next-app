@@ -2,6 +2,7 @@ import React from "react";
 import type {NextPage} from 'next';
 import Head from 'next/head';
 import Image from "next/image";
+import dynamic from "next/dynamic";
 
 import partnership from "../assets/home-page/header_microsoft_partner_logo.webp";
 import gearIcon from "../assets/home-page/gear_icon.webp";
@@ -27,6 +28,9 @@ import propM from "../assets/industries/prop_managemet.webp";
 import energy from "../assets/industries/energy_sector.webp";
 import banking from "../assets/industries/banking.webp";
 
+const OurCases = dynamic(() => import("../components/sharedComponents/OurCases"))
+const NeedHelpForm = dynamic(() => import("../components/sharedComponents/NeedHelpForm"))
+const ClientsGeography = dynamic(() => import("../components/ClientsGeography"))
 
 const RootComponent: NextPage = () => {
     return (
@@ -242,6 +246,9 @@ const RootComponent: NextPage = () => {
                         </div>
                     </div>
                 </div>
+                <OurCases/>
+                <NeedHelpForm/>
+                <ClientsGeography/>
             </main>
         </div>
     );
