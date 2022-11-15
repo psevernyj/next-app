@@ -1,0 +1,72 @@
+@import "../../mixins";
+
+.contactsSection{
+  background-color: $blue-primary;
+  .contactsTitle{
+    @include fonts("Gilroy-Light", 400, 46px, 120%);
+    color: $white;
+    text-align: center;
+    padding-bottom: 40px;
+    @media screen and (max-width: 450px){
+      font-size: 28px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .content{
+    display: flex;
+    gap: 160px;
+    justify-content: center;
+    margin-bottom: 40px;
+    .contact{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 44px;
+    }
+    .thumbnail{
+      background: rgba(247, 248, 250, 0.1);
+      border-radius: 70px;
+      padding: 36px;
+      width: 102px;
+      height: 102px;
+      transition: all 0.3s ease-in-out;
+      position: relative;
+
+      img {
+        position: absolute;
+        width: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+      }
+
+      &:hover {
+        background: $orange-primary;
+      }
+    }
+    .link{
+      @include fonts("Montserrat", 600, 24px, 29px);
+      color: $white;
+    }
+  }
+  @media screen and (max-width: 1024px){
+    .content{
+      gap: 79px;
+    }
+  }
+  @media screen and (max-width: 1024px){
+    .content{
+      gap: 61px;
+      flex-direction: column;
+      .contact{
+        gap: 20px;
+      }
+      .link{
+        font-size: 17px;
+        line-height: 21px;
+      }
+    }
+  }
+}

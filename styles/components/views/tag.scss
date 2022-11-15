@@ -1,0 +1,31 @@
+@import "../../mixins";
+
+.tag{
+  height: 44px;
+  padding: 7px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $dark-bg;
+  border-radius: 5px;
+  @include fonts("Montserrat", 500, 14px, 140%);
+  text-transform: capitalize;
+  color: $blue-primary;
+  cursor: pointer;
+  transition: all ease-out 0.1s;
+
+  .tagTitle {
+    @include fonts("Montserrat", 600, 8px, 10px);
+    color: $black-primary;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    background: rgba(56, 54, 128, 0.5);
+    color: $white;
+
+    .title {
+      color: $white;
+    }
+  }
+}

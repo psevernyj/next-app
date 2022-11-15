@@ -31,6 +31,10 @@ import banking from "../assets/industries/banking.webp";
 const OurCases = dynamic(() => import("../components/sharedComponents/OurCases"))
 const NeedHelpForm = dynamic(() => import("../components/sharedComponents/NeedHelpForm"))
 const ClientsGeography = dynamic(() => import("../components/ClientsGeography"))
+const PopularAddOns = dynamic(() => import("../components/sharedComponents/PopularAddOns"))
+const MostViewedArticles = dynamic(() => import("../components/sharedComponents/MostViewedArticles"))
+const SubscribeToNewsForm = dynamic(() => import("../components/sharedComponents/SubscribeToNewsForm"))
+const Contacts = dynamic(() => import("../components/sharedComponents/Contacts"))
 
 const RootComponent: NextPage = () => {
     return (
@@ -249,6 +253,27 @@ const RootComponent: NextPage = () => {
                 <OurCases/>
                 <NeedHelpForm/>
                 <ClientsGeography/>
+                <PopularAddOns/>
+                <div className={"education section"}>
+                    <h2 className={"pageTitle"}>UDS Education</h2>
+                    <div className={"content container"}>
+                        <p className={"paragraph"}>
+                            Do you want to get a smooth start as Dynamics 365 Consultant or Developer? After completing
+                            our courses, you will be ready to engage in the workflow fully.
+                        </p>
+                        <p className={"paragraph"}>
+                            Are you a Dynamics 365 Developer or Consultant who wants to upgrade skills? We’ll boost your
+                            professional growth.
+                        </p>
+                        <p className={"paragraph"}>
+                            Catch the opportunity to learn together with UDS top specialists.
+                        </p>
+                    </div>
+                    <button className={"button orangeButton bigButton"}>view courses</button>
+                </div>
+                <MostViewedArticles/>
+                <SubscribeToNewsForm/>
+                <Contacts/>
             </main>
         </div>
     );

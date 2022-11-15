@@ -300,4 +300,23 @@
     display: none;
   }
 }
+.education{
+  .content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+    .paragraph{
+      @include fonts("Montserrat", 500, 24px, 30px);
+      color: $black-primary;
+      text-align: center;
+      @media screen and (max-width: 1000px){
+        font-size: 20px;
+      }
+    }
+  }
+  @media screen and (max-width: 450px){
+    display: none;
+  }
+}
 

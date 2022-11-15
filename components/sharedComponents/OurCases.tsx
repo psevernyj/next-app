@@ -11,6 +11,8 @@ import powerApps from "../../assets/implemented-products/powerApps.webp";
 import powerVA from "../../assets/implemented-products/powerVA.webp";
 import powerAutomate from "../../assets/implemented-products/powerAutomate.webp";
 
+import Tag from "../views/Tag";
+
 const OurCases = () => {
     return (
         <div className={"ourCases section"}>
@@ -39,14 +41,8 @@ const OurCases = () => {
                         </p>
                         <div className={"actions"}>
                             <div className={"tags"}>
-                                <button className={"tag"}>
-                                    <span className={"title"}>industry</span>
-                                    Healthcare
-                                </button>
-                                <button className={"tag"}>
-                                    <span className={"title"}>service</span>
-                                    Management
-                                </button>
+                                <Tag text={"Healthcare"} title={"industry"}/>
+                                <Tag text={"Management"} title={"service"}/>
                             </div>
                             <button className={"arrowButton"}>
                                 <Image src={arrow} alt={"Go to case page"} width={44} height={44}/>
@@ -73,14 +69,8 @@ const OurCases = () => {
                         </p>
                         <div className={"actions"}>
                             <div className={"tags"}>
-                                <button className={"tag"}>
-                                    <span className={"title"}>industry</span>
-                                    Automotive
-                                </button>
-                                <button className={"tag"}>
-                                    <span className={"title"}>service</span>
-                                    Development
-                                </button>
+                                <Tag text={"Automotive"} title={"industry"}/>
+                                <Tag text={"Development"} title={"service"}/>
                             </div>
                             <button className={"arrowButton"}>
                                 <Image src={arrow} alt={"Go to case page"} width={44} height={44}/>
@@ -107,14 +97,8 @@ const OurCases = () => {
                         </p>
                         <div className={"actions"}>
                             <div className={"tags"}>
-                                <button className={"tag"}>
-                                    <span className={"title"}>industry</span>
-                                    Telecom
-                                </button>
-                                <button className={"tag"}>
-                                    <span className={"title"}>service</span>
-                                    Support
-                                </button>
+                                <Tag text={"Telecom"} title={"industry"}/>
+                                <Tag text={"Support"} title={"service"}/>
                             </div>
                             <button className={"arrowButton"}>
                                 <Image src={arrow} alt={"Go to case page"} width={44} height={44}/>
