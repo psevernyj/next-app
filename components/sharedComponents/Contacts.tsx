@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Contacts = () => {
+
     return (
         <div className={"contactsSection section"}>
             <h2 className={"contactsTitle container"}>

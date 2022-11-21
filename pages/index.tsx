@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import type {NextPage} from 'next';
 import Head from 'next/head';
 import Image from "next/image";
@@ -37,6 +37,7 @@ const SubscribeToNewsForm = dynamic(() => import("../components/sharedComponents
 const Contacts = dynamic(() => import("../components/sharedComponents/Contacts"))
 
 const RootComponent: NextPage = () => {
+
     return (
         <div>
             <Head>
@@ -46,7 +47,7 @@ const RootComponent: NextPage = () => {
                 <meta name="description" key="description"
                       content="UDS Systems is a team of skilled professionals who specialized in Microsoft Dynamics 365 ERP/CRM and Power Apps development. Microsoft implementation partner."/>
             </Head>
-            <main className={"main"}>
+            <main className={"main homePage"}>
                 <div className={"firstScreen"}>
                     <div className={"content container"}>
                         <h1 className={"title"}>Grow your company`s potential with transparent reporting and empowering

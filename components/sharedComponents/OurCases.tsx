@@ -49,7 +49,6 @@ const OurCases = () => {
                             </button>
                         </div>
                     </div>
-
                 </div>
                 <div className={"caseCard"}>
                     <Image className={"thumbnail"} src={carRepair} alt={"Case Logo"}/>

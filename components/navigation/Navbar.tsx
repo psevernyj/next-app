@@ -3,6 +3,7 @@ import Link from 'next/link';
 import NavItem, {NavItemProp} from './NavItem';
 import Image from 'next/image';
 import udsLogo from '../../assets/uds-logo/uds_logo.webp';
+import Modal from "../views/Modal";
 
 const menuList: Array<NavItemProp> = [
   {
@@ -92,6 +93,7 @@ const menuList: Array<NavItemProp> = [
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
   const [activeIdx, setActiveIdx] = useState(-1);
+
   return (
     <header className={'header'}>
       <nav className={'nav container'}>

@@ -1,0 +1,55 @@
+.casesPage {
+
+  .input {
+    width: 342px;
+    height: 74px;
+    background: #FFFFFF;
+    border: 1px solid #C4CBD0;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  .firstScreen {
+    background-image: url("../../assets/cases/cases_home_page_header_bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 94px;
+    height: 740px;
+    //height: 670px;
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 44px;
+
+      .title {
+        text-align: left;
+        width: 50%;
+      }
+
+      .subtitle {
+        width: 45%;
+        text-align: left;
+      }
+    }
+  }
+  .casesCatalog{
+    margin-top: -230px;
+  }
+  .casesCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    padding-top: 70px;
+    @media screen and (max-width: 1080px){
+      justify-content: center;
+      gap: 40px;
+    }
+    @media screen and (max-width: 760px){
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}

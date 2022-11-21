@@ -1,11 +1,14 @@
 @import "components/navigation/navbar";
 @import "components/navigation/footer";
-@import "homePage";
+@import "pages/homePage";
+@import "pages/casesPage";
 @import "components/sharedComponents/ourCases";
 @import "components/sharedComponents/popularAddons";
 @import "components/views/tag";
 @import "components/sharedComponents/mostViewedArticles";
 @import "components/sharedComponents/contacts";
+@import "components/views/caseCard";
+@import "components/views/modal";
 
 html,
 body {
@@ -37,6 +40,30 @@ a {
 .main {
   min-height: 100vh;
   flex: 1;
+
+  .title {
+    @include fonts("Gilroy-Light", 400, 46px, 150%);
+    color: $white;
+    @media only screen and (max-width: 1024px) {
+      font-size: 40px;
+      line-height: 120%;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: 28px;
+    }
+  }
+
+  .subtitle {
+    @include fonts("Montserrat", 600, 22px, 130%);
+    color: $white;
+    @media only screen and (max-width: 1024px) {
+      font-size: 16px;
+      line-height: 130%;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: 17px;
+    }
+  }
 
   .pageTitle{
     @include fonts("Gilroy-Light", 400, 46px, 120%);
