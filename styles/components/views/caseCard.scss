@@ -4,8 +4,6 @@
   background-color: $light-bg;
   border-radius: 5px;
   max-width: 342px;
-  height: 460px;
-
   .thumbnail {
     width: 100%;
     height: auto;
@@ -14,7 +12,7 @@
   .content {
     padding: 20px 22px;
     display: grid;
-    grid-template-rows: 0.5fr 2fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
     grid-gap: 15px;
 
     .products {
@@ -42,13 +40,23 @@
     .actions {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: self-end;
     }
 
     .tags {
       display: flex;
       flex-wrap: wrap;
       gap: 5px;
+    }
+    .arrowButton{
+      height: 44px;
+    }
+  }
+  @media screen and (max-width: 760px){
+    .content{
+      .title{
+        font-size: 17px;
+      }
     }
   }
 }

@@ -2,6 +2,8 @@ import type {NextPage} from 'next';
 import Head from 'next/head';
 import React from "react";
 import CaseCard from "../../components/views/CaseCard";
+import NeedHelpForm from "../../components/sharedComponents/NeedHelpForm";
+import Contacts from "../../components/sharedComponents/Contacts";
 
 
 const CasesComponent: NextPage = () => {
@@ -32,6 +34,8 @@ const CasesComponent: NextPage = () => {
                         <CaseCard/>
                     </div>
                 </div>
+                <NeedHelpForm/>
+                <Contacts/>
             </main>
         </>
     );

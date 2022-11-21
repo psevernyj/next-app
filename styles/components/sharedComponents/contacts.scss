@@ -59,7 +59,6 @@
   @media screen and (max-width: 1024px){
     .content{
       gap: 61px;
-      flex-direction: column;
       .contact{
         gap: 20px;
       }
@@ -67,6 +66,11 @@
         font-size: 17px;
         line-height: 21px;
       }
+    }
+  }
+  @media screen and (max-width: 450px){
+    .content{
+      flex-direction: column;
     }
   }
 }
