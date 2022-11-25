@@ -36,17 +36,19 @@
       }
 
     }
-    .content{
+
+    .content {
       transition: height 0.2s ease-in-out;
       overflow: hidden;
-      //margin-top: 31px;
     }
 
   }
-  .active{
-    .itemButton{
+
+  .active {
+    .itemButton {
       padding-bottom: 31px;
     }
+
     &::after {
       transform: rotate(-180deg);
     }

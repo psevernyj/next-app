@@ -2,10 +2,46 @@
 .privacy{
   background-color: $light-bg;
 
+  .orangeLink{
+    color: $orange-primary;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
   .firstScreen{
     background: rgba(56, 54, 128, 0.9);
     backdrop-filter: blur(6px);
     padding-top: 90px;
     padding-bottom: 88px;
+  }
+  .addressContent{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-gap: 30px;
+  }
+  .address{
+    background: $blue-primary;
+    border-radius: 5px;
+    padding: 20px;
+    width: 290px;
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .item{
+      color: $white;
+      text-transform: uppercase;
+    }
+    .link{
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  .paragraphSection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }

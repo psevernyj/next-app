@@ -10,7 +10,8 @@ const Accordion = ({items}: { items: Array<AccordionData> }) => {
 
     const [currentIndex, setCurrentIndex] = useState(-1);
     const btnOnclick = (idx: number) => {
-        setCurrentIndex(idx)
+        // setCurrentIndex(idx)
+        setCurrentIndex((currentValue) => currentValue !==idx ? idx : -1)
     }
 
 
