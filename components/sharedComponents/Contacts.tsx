@@ -21,7 +21,7 @@ const Contacts = () => {
                             </svg>
                         </div>
                     </a>
-                    <a className={"link"} href={"mailto:info@uds.systems"}>info@uds.systems</a>
+                    <a className={"link"} href={"mailto:info@uds.systems"} aria-label={"Contact us!"} title={"mail"}>info@uds.systems</a>
                 </div>
                 <div className={"contact"}>
                     <a className={"link"} href="skype:live:uds_ddt?chat">
@@ -34,7 +34,7 @@ const Contacts = () => {
                             </svg>
                         </div>
                     </a>
-                    <a className={"link"} href="skype:live:uds_ddt?chat">uds.systems</a>
+                    <a className={"link"} href="skype:live:uds_ddt?chat" aria-label={"Contact us!"} title={"skype"}>uds.systems</a>
                 </div>
             </div>
             <button className={"button orangeButton bigButton"}>

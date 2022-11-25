@@ -3,7 +3,6 @@ import Link from 'next/link';
 import NavItem, {NavItemProp} from './NavItem';
 import Image from 'next/image';
 import udsLogo from '../../assets/uds-logo/uds_logo.webp';
-import Modal from "../views/Modal";
 
 const menuList: Array<NavItemProp> = [
   {

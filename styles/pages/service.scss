@@ -1,0 +1,70 @@
+@import "../mixins";
+
+.servicePage{
+
+  .firstScreen{
+    background-image: url("../../assets/services/microsoft_365_sales/header_bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 98px;
+    padding-bottom: 125px;
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 44px;
+
+      .title {
+        text-align: left;
+        max-width: 638px;
+      }
+
+      .subtitle {
+        max-width: 638px;
+        text-align: left;
+      }
+      .button{
+        margin: initial;
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      padding-top: 37px;
+      padding-bottom: 52px;
+    }
+  }
+
+  .turnkeySettings{
+    .content{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  .benefits{
+    .benefitsList{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 50px;
+    }
+    .benefit{
+      display: grid;
+      grid-template-rows: 1fr 0.4fr 1fr;
+      justify-items: center;
+      align-items: center;
+      grid-gap: 10px;
+      .benefitIcon{
+        margin-bottom: 33px;
+      }
+      .title{
+        @include fonts("Montserrat", 600, 24px, 120%);
+        color: $blue-primary;
+        text-align: center;
+        align-self: center;
+      }
+      .paragraph{
+        align-self: self-start;
+      }
+    }
+  }
+}

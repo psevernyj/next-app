@@ -1,6 +1,6 @@
 import React, {FC, useState} from 'react';
 
-const Modal: FC = ():JSX.Element => {
+const BookingModal: FC = ():JSX.Element => {
 
     const [modal, setModal] = useState(false)
 
@@ -28,4 +28,4 @@ const Modal: FC = ():JSX.Element => {
     );
 };
 
-export default Modal;
+export default BookingModal;
