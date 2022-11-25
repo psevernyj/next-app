@@ -4,6 +4,12 @@ import Image from "next/image";
 
 import benefitItem from "../../assets/services/microsoft_365_sales/compromise.svg";
 import quickStart from "../../assets/services/microsoft_365_sales/sales_map.svg";
+import objectionPic from "../../assets/services/microsoft_365_sales/man_icon.svg";
+import roadmap from "../../assets/services/microsoft_365_sales/roadmap.webp";
+import partnerLogo from "../../assets/services/microsoft_365_sales/partner_logo.svg";
+import BookServiceForm from "../../components/sharedComponents/BookServiceForm";
+import OurCases from "../../components/sharedComponents/OurCases";
+import Contacts from "../../components/sharedComponents/Contacts";
 
 const UdsSalesStart: NextPage = () => {
     return (
@@ -90,8 +96,9 @@ const UdsSalesStart: NextPage = () => {
                         <Image src={quickStart} alt={"Quick Start Map"}/>
                     </div>
                 </div>
-                <div className={"objection section"}>
+                <div className={"objections section"}>
                     <h2 className={"pageTitle"}>What if</h2>
+                    <Image className={"objectionThumbnail container"} src={objectionPic} alt={"Logo"}/>
                     <div className={"objectionList container"}>
                         <div className={"objection"}>
                             <p className={"title"}>… the result does not match my expectations?</p>
@@ -101,8 +108,59 @@ const UdsSalesStart: NextPage = () => {
                                 always make sure everything goes according to plan.
                             </p>
                         </div>
+                        <div className={"objection"}>
+                            <p className={"title"}>… the budget increases suddenly?</p>
+                            <p className={"paragraph"}>
+                                The service is delivered at a fixed price as it has a fixed scope of tasks. It means the
+                                price for this scope will not change once approved by you.
+                            </p>
+                        </div>
+                        <div className={"objection"}>
+                            <p className={"title"}>… my team faces difficulties working with CRM?</p>
+                            <p className={"paragraph"}>
+                                Quick Start Sales by UDS Systems includes a training programme for employees. We will
+                                arrange a comprehensive overview of your Dynamics 365 Sales for your team and answer
+                                any questions you might face.
+                            </p>
+                        </div>
+                        <div className={"objection"}>
+                            <p className={"title"}>… the product doesn’t fit my industry?</p>
+                            <p className={"paragraph"}>
+                                Dynamics 365 was designed to fit any industry because of the large range of
+                                customizations available. This solution has been field tested by UDS Systems for 15
+                                years and confirmed
+                                to be effective in various scenarios.
+                            </p>
+                        </div>
                     </div>
                 </div>
+                <div className={"serviceRoadmap section"}>
+                    <h2 className={"pageTitle"}>Service Roadmap</h2>
+                    <div className={"container content"}>
+                        <Image src={roadmap} alt={"Map"} className={"serviceMap"}/>
+                    </div>
+                </div>
+                <div className={"about section"}>
+                    <h2 className={"pageTitle"}>About us</h2>
+                    <div className={"content container"}>
+                        <div className={"paragraphSection"}>
+                            <p className={"paragraph"}>
+                                Since 2007, we provide Dynamics 365 R&D services, migrations, projects, and support
+                                services worldwide. We have earned Microsoft Gold Application Development competency. We
+                                love our job and aim to keep leadership in the chosen business area. Therefore, we value
+                                our reputation as well as long-term relationships and are responsible for the results.
+                            </p>
+                            <p className={"paragraph"}>
+                                By the way, we at UDS Systems also use plenty of Microsoft products built on Dynamics
+                                365 in our inner workings and find these solutions powerful. </p>
+                        </div>
+                        <Image className={"partnerLogo"} src={partnerLogo} alt={"Partner Logo"}/>
+                    </div>
+
+                </div>
+                <BookServiceForm/>
+                <OurCases/>
+                <Contacts/>
             </main>
         </div>
     );

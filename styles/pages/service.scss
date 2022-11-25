@@ -42,6 +42,7 @@
   }
 
   .benefits{
+    background-color: $light-bg;
     .benefitsList{
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -64,6 +65,66 @@
       }
       .paragraph{
         align-self: self-start;
+      }
+    }
+  }
+  .objections{
+    background-color: $light-bg;
+    .objectionThumbnail{
+      width: 336px;
+      height: 210px;
+      display: flex;
+      align-self: center;
+      margin-bottom: 60px;
+    }
+
+    .objectionList{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 40px;
+    }
+    .objection{
+      display: grid;
+      grid-template-rows: 1fr 2fr;
+      justify-items: center;
+      align-items: center;
+      grid-gap: 10px;
+      .title{
+        @include fonts("Montserrat", 600, 18px, 130%);
+        color: $blue-primary;
+        align-self: center;
+      }
+      .paragraph{
+        align-self: self-start;
+      }
+    }
+  }
+  .serviceRoadmap{
+    .serviceMap{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .about{
+    background-color: $light-bg;
+    .content{
+      background-color: $white;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .paragraphSection{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .paragraph{
+          text-align: left;
+        }
+      }
+
+      .partnerLogo{
+        border-left: 1px solid $border;
       }
     }
   }

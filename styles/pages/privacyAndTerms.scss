@@ -1,0 +1,11 @@
+@import "../mixins";
+.privacy{
+  background-color: $light-bg;
+
+  .firstScreen{
+    background: rgba(56, 54, 128, 0.9);
+    backdrop-filter: blur(6px);
+    padding-top: 90px;
+    padding-bottom: 88px;
+  }
+}
