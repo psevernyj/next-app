@@ -42,6 +42,22 @@
       overflow: hidden;
     }
 
+    .list{
+      //display: list-item;
+      .item{
+        &::before{
+          //content: "";
+          //background: lightgray;
+          //width: 5px;
+          //height: 5px;
+          //border-radius: 5px;
+          //padding-inline: 5px;
+          //margin-inline-end: 5px;
+          //color: $orange-primary;
+        }
+      }
+    }
+
   }
 
   .active {
