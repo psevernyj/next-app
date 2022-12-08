@@ -633,4 +633,93 @@ export const termsItems = [
             </p>
         </div>
     },
+    {
+        title: "Iframes",
+        content: <div className={"paragraphSection"}>
+            <p className={"paragraph"}>
+                Without prior approval and express written permission, you may not create frames around our Web pages or
+                use other techniques that alter in any way the visual presentation or appearance of our Websites.
+            </p>
+        </div>
+    },
+    {
+        title: "Reservation of Rights",
+        content: <div className={"paragraphSection"}>
+            <p className={"paragraph"}>
+                We reserve the right at any time and in its sole discretion to request that you remove all links or any
+                particular link to our Websites. You agree to immediately remove all links to our Websites upon such
+                request. We also reserve the right to amend these terms and conditions and its linking policy at any
+                time. By continuing to link to our Websites, you agree to be bound to and abide by these linking terms
+                and conditions.
+            </p>
+        </div>
+    },
+    {
+        title: "Removal of links from our Websites",
+        content: <div className={"paragraphSection"}>
+            <p className={"paragraph"}>
+                If you find any link on our Websites or any linked websites objectionable for any reason, you may
+                contact us about this. We will consider requests to remove links but will have no obligation to do so or
+                to respond directly to you.
+            </p>
+            <p className={"paragraph"}>
+                Whilst we endeavour to ensure that the information on UDS Systems’s websites is correct, we do not
+                warrant its completeness or accuracy; nor do we commit to ensuring that the Websites remain available or
+                that the material on the Websites are kept up-to-date.
+            </p>
+        </div>
+    },
+    {
+        title: "Content Liability",
+        content: <div className={"paragraphSection"}>
+            <p className={"paragraph"}>
+                We shall have no responsibility or liability for any content appearing on your website. You agree to
+                indemnify and defend us against all claims arising out of or based upon your website. No link(s) may
+                appear on any page on your website or within any context containing content or materials that may be
+                interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the
+                infringement or other violation of, any third party rights.
+            </p>
+        </div>
+    },
+    {
+        title: "Disclaimer",
+        content: <div className={"paragraphSection"}>
+            <p className={"paragraph"}>
+                To the maximum extent permitted by applicable law, we exclude all representations, warranties and
+                conditions relating to our Websites and the use of these Websites (including, without limitation, any
+                warranties implied by law in respect of satisfactory quality, fitness for purpose and/or the use of
+                reasonable care and skill). Nothing in this disclaimer will:
+            </p>
+            <ul className={"list"}>
+                <li className={"item"}>
+                    limit or exclude our or your liability for death or personal injury resulting from negligence;
+                </li>
+                <li className={"item"}>
+                    limit or exclude our or your liability for fraud or fraudulent misrepresentation;
+                </li>
+                <li className={"item"}>
+                    limit any of our or your liabilities in any way that is not permitted under applicable law;
+                </li>
+                <li className={"item"}>
+                    exclude any of our or your liabilities that may not be excluded under applicable law.
+                </li>
+            </ul>
+            <p className={"paragraph"}>
+                The limitations and exclusions of liability set out in this Section and elsewhere in this disclaimer:
+                (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer
+                or in relation to the subject matter of this disclaimer, including liabilities arising in contract, in
+                tort (including negligence) and for breach of statutory duty.
+            </p>
+        </div>
+    },
+    {
+        title: "Credit & Contact Information",
+        content: <div className={"paragraphSection"}>
+            <p className={"paragraph"}>
+                If you have any questions, please contact us via
+                <a className={"orangeLink"} href={"mailto:info@uds.systems"}> email</a> or
+                <a className={"orangeLink"} href={"tel:+380953839341"}> phone</a>.
+            </p>
+        </div>
+    },
 ]
