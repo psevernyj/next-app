@@ -75,17 +75,22 @@
       border-collapse: collapse;
       color: $gray-secondary;
       margin-bottom: 25px;
-      thead{
+      border-radius: 5px 5px 0 0;
+      background-color: $light-bg;
+
+      th{
+        padding: 18px 10px 18px 20px;
         @include fonts("Montserrat", 500, 14px, 140%);
         color: $black-primary;
+        text-transform: uppercase;
+
       }
-      th{
-        padding: 0.6rem 1rem;
+      thead{
+        background: $dark-bg;
       }
       td{
-        padding: 0.6rem 1rem;
+        padding: 20px;
         border-bottom: 1px solid $dark-bg;
-        valign: top;
         @include fonts("Gilroy-Light", 400, 14px, 120%);
         color: $blue-primary;
       }
