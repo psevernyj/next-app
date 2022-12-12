@@ -3,6 +3,7 @@ import Link from 'next/link';
 import NavItem, {NavItemProp} from './NavItem';
 import Image from 'next/image';
 import udsLogo from '../../assets/uds-logo/uds_logo.webp';
+import {openExternalTab} from "../../helpers/openLinks";
 
 const menuList: Array<NavItemProp> = [
   {
@@ -119,7 +120,7 @@ const Navbar = () => {
             );
           })}
           <div className={'menuActions'}>
-            <button className={"button blueButton smallButton"}>
+            <button className={"button blueButton smallButton"} onClick={openExternalTab("https://my.uds.systems/")}>
               Go to the portal
             </button>
             <button className={"button orangeButton smallButton"}>

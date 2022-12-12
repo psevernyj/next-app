@@ -4,6 +4,7 @@ import Image from "next/image";
 import sa from "../../assets/add-ons/SA.webp";
 import mc from "../../assets/add-ons/MC.webp";
 import vm from "../../assets/add-ons/VM.webp";
+import {openInternalTab} from "../../helpers/openLinks";
 
 const PopularAddOns = () => {
     return (
@@ -26,7 +27,7 @@ const PopularAddOns = () => {
                     <span className={"downloadsInfo"}>368 <span className={"inscription"}>downloads</span></span>
                 </div>
             </div>
-            <button className={"button orangeButton bigButton"}>view all add-ons</button>
+            <button className={"button orangeButton bigButton"} onClick={openInternalTab("/add-ons")}>view all add-ons</button>
         </div>
     );
 };

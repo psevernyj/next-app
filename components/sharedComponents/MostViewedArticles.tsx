@@ -10,6 +10,8 @@ import logo3 from "../../assets/articles/logo_3.webp";
 import logo4 from "../../assets/articles/logo_4.webp";
 import arrow from "../../assets/cases/orange_arrow.webp";
 
+import {openInternalTab} from "../../helpers/openLinks";
+
 
 const MostViewedArticles = () => {
     return (
@@ -89,7 +91,7 @@ const MostViewedArticles = () => {
                     </div>
                 </div>
             </div>
-            <button className={"button orangeButton bigButton"}>view all Articles</button>
+            <button className={"button orangeButton bigButton"} onClick={openInternalTab("/blog")}>view all Articles</button>
 
         </div>
     );

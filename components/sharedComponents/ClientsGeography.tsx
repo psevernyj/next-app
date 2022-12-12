@@ -1,5 +1,5 @@
 import React from 'react';
-import map from "../assets/home-page/map.svg";
+import map from "../../assets/home-page/map.svg";
 import Image from "next/image";
 
 const ClientsGeography = () => {

@@ -12,6 +12,7 @@ import powerVA from "../../assets/implemented-products/powerVA.webp";
 import powerAutomate from "../../assets/implemented-products/powerAutomate.webp";
 
 import Tag from "../views/Tag";
+import {openInternalTab} from "../../helpers/openLinks";
 
 const OurCases = () => {
     return (
@@ -107,7 +108,7 @@ const OurCases = () => {
 
                 </div>
             </div>
-            <button className={"button orangeButton bigButton"}>More Cases</button>
+            <button className={"button orangeButton bigButton"} onClick={openInternalTab("/cases")}>More Cases</button>
         </div>
     );
 };

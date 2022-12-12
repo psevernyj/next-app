@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import type {NextPage} from 'next';
 import Head from 'next/head';
 import Image from "next/image";
@@ -27,10 +27,11 @@ import construction from "../assets/industries/constructions.webp";
 import propM from "../assets/industries/prop_managemet.webp";
 import energy from "../assets/industries/energy_sector.webp";
 import banking from "../assets/industries/banking.webp";
+import {openExternalTab} from "../helpers/openLinks";
 
 const OurCases = dynamic(() => import("../components/sharedComponents/OurCases"))
 const NeedHelpForm = dynamic(() => import("../components/sharedComponents/NeedHelpForm"))
-const ClientsGeography = dynamic(() => import("../components/ClientsGeography"))
+const ClientsGeography = dynamic(() => import("../components/sharedComponents/ClientsGeography"))
 const PopularAddOns = dynamic(() => import("../components/sharedComponents/PopularAddOns"))
 const MostViewedArticles = dynamic(() => import("../components/sharedComponents/MostViewedArticles"))
 const SubscribeToNewsForm = dynamic(() => import("../components/sharedComponents/SubscribeToNewsForm"))
@@ -270,7 +271,9 @@ const RootComponent: NextPage = () => {
                             Catch the opportunity to learn together with UDS top specialists.
                         </p>
                     </div>
-                    <button className={"button orangeButton bigButton"}>view courses</button>
+                    <button className={"button orangeButton bigButton"}
+                            onClick={openExternalTab("https://my.uds.systems/education")}>view courses
+                    </button>
                 </div>
                 <MostViewedArticles/>
                 <SubscribeToNewsForm/>
