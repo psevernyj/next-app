@@ -29,7 +29,7 @@ export const privacyItems = [
                 <p className={"paragraph"}>
                     This Privacy Policy ("Privacy Policy") applies to UDS Systems as well as website <a
                     href={"https://uds.systems/"} className={"orangeLink"}>https://uds.systems/</a> or <a
-                    href={"https://my.uds.systems/"}
+                    href={"https://my.uds.systems/"} target={"_blank"} rel={"noopener"}
                     className={"orangeLink"}>https://my.uds.systems/</a> (hereinafter, "us", "we", “Website”). We
                     respect your privacy and are committed
                     to protecting personal data you may
@@ -190,84 +190,83 @@ export const privacyItems = [
                 of those are abroad, therefore disclosure to parties abroad is deemed international data transfer. Third
                 party processors of personal data are as follows:
             </p>
-            <table className="thirdPartiesTable">
-                <thead>
-                <tr>
-                    <th>Company name</th>
-                    <th>Address</th>
-                    <th>Rendered Service</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td valign="top" aria-label="Company name">UDS Systems East European Regional Office</td>
-                    <td valign="top" aria-label="Address">Office 245,
-                        17/31A Kolomyiskyi Lane, Kyiv, 03022, Ukraine
-                    </td>
-                    <td valign="top" aria-label="Rendered Service">Marketing, End-user support, systems upkeep</td>
-                </tr>
-                <tr>
-                    <td valign="top" aria-label="Company name">Microsoft Deutschland GmbH</td>
-                    <td valign="top" aria-label="Address">Konrad-Zuse-Str.1, 85716 Unterschleißheim, Germany</td>
-                    <td valign="top" aria-label="Rendered Service">Primary service provider, hosting provider, email
-                        provider, OpenID
-                    </td>
-                </tr>
-                <tr>
-                    <td valign="top" aria-label="Company name">Azure Active Directory B2C</td>
-                    <td valign="top" aria-label="Address">Redmond, Washington 98052, USA</td>
-                    <td valign="top" aria-label="Rendered Service">Identity management service</td>
-                </tr>
-                <tr>
-                    <td valign="top" aria-label="Company name">Azure BLOB Storage</td>
-                    <td valign="top" aria-label="Address">Redmond, Washington 98052, USA</td>
-                    <td valign="top" aria-label="Rendered Service">Azure service</td>
-                </tr>
-                <tr>
-                    <td valign="top" aria-label="Company name">DNS Made Easy / Tiggee LLC</td>
-                    <td valign="top" aria-label="Address">11490 Commerce Park Drive Suite #140, Reston VA 20191, USA
-                    </td>
-                    <td valign="top" aria-label="Rendered Service">DNS management services</td>
-                </tr>
-                <tr>
-                    <td valign="top" aria-label="Company name">Hotjar Ltd</td>
-                    <td valign="top" aria-label="Address">Dragonara Business Centre, 5th Floor, Dragonara Road,
-                        Paceville St Julian's STJ 3141, Malta
-                    </td>
-                    <td valign="top" aria-label="Rendered Service">A heatmap, survey, feedback and funnel application.
-                    </td>
-                </tr>
-                <tr>
-                    <td valign="top" aria-label="Company name">Leadfeeder / Liidio Oy</td>
-                    <td valign="top" aria-label="Address">Mikonkatu 17 C, 00100 Helsinki, Finland</td>
-                    <td valign="top" aria-label="Rendered Service">Marketing information.</td>
-                </tr>
-                <tr>
-                    <td valign="top" aria-label="Company name">Google Ireland Limited</td>
-                    <td valign="top" aria-label="Address">Gordon House, Barrow St, Dublin 4, Ireland</td>
-                    <td valign="top" aria-label="Rendered Service">Marketing information, Analytics, Conversion
-                        Tracking,
-                        mobile content optimization, Advertising, OpenID
-                    </td>
-                </tr>
-                <tr>
-                    <td valign="top" aria-label="Company name">Facebook Ireland Ltd</td>
-                    <td valign="top" aria-label="Address">4 Grand Canal Square Grand Canal Harbour Dublin 2, Ireland
-                    </td>
-                    <td valign="top" aria-label="Rendered Service">Marketing information, Advertising, Conversion
-                        Tracking, Integrations, OpenID
-                    </td>
-                </tr>
-                <tr>
-                    <td valign="top" aria-label="Company name">LinkedIn Ireland Unlimited Company</td>
-                    <td valign="top" aria-label="Address">Wilton Plaza, Gardner House 4,5,6 2 Dublin, Ireland</td>
-                    <td valign="top" aria-label="Rendered Service">Marketing information, Analytics, Conversion
-                        Tracking.
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-
+                <table className="thirdPartiesTable">
+                    <thead>
+                    <tr>
+                        <th>Company name</th>
+                        <th>Address</th>
+                        <th>Rendered Service</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td valign="top" aria-label="Company name">UDS Systems East European Regional Office</td>
+                        <td valign="top" aria-label="Address">Office 245,
+                            17/31A Kolomyiskyi Lane, Kyiv, 03022, Ukraine
+                        </td>
+                        <td valign="top" aria-label="Rendered Service">Marketing, End-user support, systems upkeep</td>
+                    </tr>
+                    <tr>
+                        <td valign="top" aria-label="Company name">Microsoft Deutschland GmbH</td>
+                        <td valign="top" aria-label="Address">Konrad-Zuse-Str.1, 85716 Unterschleißheim, Germany</td>
+                        <td valign="top" aria-label="Rendered Service">Primary service provider, hosting provider, email
+                            provider, OpenID
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" aria-label="Company name">Azure Active Directory B2C</td>
+                        <td valign="top" aria-label="Address">Redmond, Washington 98052, USA</td>
+                        <td valign="top" aria-label="Rendered Service">Identity management service</td>
+                    </tr>
+                    <tr>
+                        <td valign="top" aria-label="Company name">Azure BLOB Storage</td>
+                        <td valign="top" aria-label="Address">Redmond, Washington 98052, USA</td>
+                        <td valign="top" aria-label="Rendered Service">Azure service</td>
+                    </tr>
+                    <tr>
+                        <td valign="top" aria-label="Company name">DNS Made Easy / Tiggee LLC</td>
+                        <td valign="top" aria-label="Address">11490 Commerce Park Drive Suite #140, Reston VA 20191, USA
+                        </td>
+                        <td valign="top" aria-label="Rendered Service">DNS management services</td>
+                    </tr>
+                    <tr>
+                        <td valign="top" aria-label="Company name">Hotjar Ltd</td>
+                        <td valign="top" aria-label="Address">Dragonara Business Centre, 5th Floor, Dragonara Road,
+                            Paceville St Julian's STJ 3141, Malta
+                        </td>
+                        <td valign="top" aria-label="Rendered Service">A heatmap, survey, feedback and funnel application.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" aria-label="Company name">Leadfeeder / Liidio Oy</td>
+                        <td valign="top" aria-label="Address">Mikonkatu 17 C, 00100 Helsinki, Finland</td>
+                        <td valign="top" aria-label="Rendered Service">Marketing information.</td>
+                    </tr>
+                    <tr>
+                        <td valign="top" aria-label="Company name">Google Ireland Limited</td>
+                        <td valign="top" aria-label="Address">Gordon House, Barrow St, Dublin 4, Ireland</td>
+                        <td valign="top" aria-label="Rendered Service">Marketing information, Analytics, Conversion
+                            Tracking,
+                            mobile content optimization, Advertising, OpenID
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" aria-label="Company name">Facebook Ireland Ltd</td>
+                        <td valign="top" aria-label="Address">4 Grand Canal Square Grand Canal Harbour Dublin 2, Ireland
+                        </td>
+                        <td valign="top" aria-label="Rendered Service">Marketing information, Advertising, Conversion
+                            Tracking, Integrations, OpenID
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top" aria-label="Company name">LinkedIn Ireland Unlimited Company</td>
+                        <td valign="top" aria-label="Address">Wilton Plaza, Gardner House 4,5,6 2 Dublin, Ireland</td>
+                        <td valign="top" aria-label="Rendered Service">Marketing information, Analytics, Conversion
+                            Tracking.
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
         </div>
     },
     {
@@ -433,7 +432,7 @@ export const termsItems = [
                     These terms and conditions outline the rules and regulations for the use of UDS Systems’s websites
                     (<a href={"https://uds.systems/"} className={"orangeLink"}>https://uds.systems/</a> or
                     <a href={"https://my.uds.systems/"} target={"_blank"} rel={"noopener"}
-                       className={"orangeLink"}>https://my.uds.systems/</a>) that run as one service.
+                       className={"orangeLink"}> https://my.uds.systems/</a>) that run as one service.
                 </p>
                 <p className={"paragraph"}>
                     By accessing UDS System’s websites we assume you accept these terms and conditions in full. Do not
@@ -461,7 +460,7 @@ export const termsItems = [
         content: <div className={"paragraphSection"}>
             <p className={"paragraph"}>
                 We employ the use of cookies. By using UDS Systems’s websites
-                (<a href={"https://uds.systems/"} className={"orangeLink"}>https://uds.systems/</a>
+                (<a href={"https://uds.systems/"} className={"orangeLink"}>https://uds.systems/ </a>
                 or <a href={"https://my.uds.systems/"} className={"orangeLink"} target={"_blank"}
                       rel={"noopener"}>https://my.uds.systems/</a>),
                 you consent to the use of cookies in accordance with UDS Systems's

@@ -46,16 +46,17 @@
       display: flex;
       flex-direction: column;
       gap: 13px;
+      padding-left: 10px;
       .item{
         display: grid;
         grid-template-columns: 0.1fr 11fr;
-        align-items: baseline;
         grid-gap: 10px;
         &::before{
           content: '';
           display: inline-block;
           width: 5px;
           height: 5px;
+          margin-top: 9px;
           -moz-border-radius: 7.5px;
           -webkit-border-radius: 7.5px;
           border-radius: 7.5px;
@@ -68,14 +69,13 @@
       grid-template-columns: 1fr 1.7fr;
       grid-gap: 20px;
     }
-
     .thirdPartiesTable {
       width: 100%;
       border: 0;
       border-collapse: collapse;
       color: $gray-secondary;
       margin-bottom: 25px;
-      border-radius: 5px 5px 0 0;
+
       background-color: $light-bg;
 
       th{
@@ -124,6 +124,60 @@
 
     &::after {
       transform: rotate(-180deg);
+    }
+  }
+  .addressContent{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-gap: 30px;
+  }
+  .address{
+    background: $blue-primary;
+    border-radius: 5px;
+    padding: 20px;
+    //width: 290px;
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .item{
+      color: $white;
+      text-transform: uppercase;
+    }
+    .link{
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  .paragraphSection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 1024px){
+    .accordionItem{
+      padding: 20px 20px 20px 40px;
+    }
+    .active{
+      .itemButton{
+        padding-bottom: 20px;
+      }
+    }
+  }
+  @media screen and (max-width: 800px){
+    .addressContent{
+      grid-template-columns: 1fr;
+    }
+  }
+  @media screen and (max-width: 541px){
+    .accordionItem{
+      padding: 20px;
+      .twoColumn{
+        grid-template-columns: 1fr;
+        gap: 13px;
+      }
     }
   }
 }

@@ -1,52 +1,63 @@
 @import "../mixins";
-.privacy{
+
+.privacyAndTerms {
   background-color: $light-bg;
 
-  .orangeLink{
+  .orangeLink {
     color: $orange-primary;
-    &:hover{
+
+    &:hover {
       text-decoration: underline;
     }
   }
 
-  .firstScreen{
-    background: rgba(56, 54, 128, 0.9);
-    //background-image: url("../../assets/privacy-and-terms/privacy_bg.webp");
+  .firstScreen {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    //clip-path: polygon(0% 0%, 81% 0%, 71.25% 100%, 0% 100%);
-    backdrop-filter: blur(6px);
+    background-position: 90%;
     padding-top: 90px;
     padding-bottom: 88px;
   }
-  .addressContent{
-    display: grid;
-    grid-template-columns: 1fr 2.5fr;
-    grid-gap: 30px;
+
+  .subtitle {
+    padding-top: 20px;
   }
-  .address{
-    background: $blue-primary;
-    border-radius: 5px;
-    padding: 20px;
-    width: 290px;
-    height: 275px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    .item{
-      color: $white;
-      text-transform: uppercase;
-    }
-    .link{
-      &:hover{
-        text-decoration: underline;
-      }
+
+  .privacy {
+    background-image: url("../../assets/privacy-and-terms/privacy_bg.webp");
+  }
+
+  .terms {
+    background-image: url("../../assets/privacy-and-terms/terms_bg.webp");
+  }
+
+  @media screen and (max-width: 1024px) {
+    .firstScreen {
+      padding: 69px 0;
     }
   }
-  .paragraphSection{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  @media screen and (max-width: 900px) {
+    .mainTitle {
+      width: 50%;
+    }
+    .subtitle {
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .mainTitle {
+      width: 60%;
+    }
+    .subtitle {
+      width: 60%;
+    }
+  }
+  @media screen and (max-width: 746px) {
+    .privacy {
+      background-image: url("../../assets/privacy-and-terms/privacy_bg_mobile.webp");
+    }
+    .terms {
+      background-image: url("../../assets/privacy-and-terms/terms_bg_mobile.webp");
+    }
   }
 }

@@ -13,10 +13,10 @@ const PrivacyPolicyComponent: NextPage = () => {
             <Head>
                 <title>Privacy Policy | UDS Systems</title>
             </Head>
-            <main className={"main privacy"}>
-                <div className={"firstScreen"}>
+            <main className={"main privacyAndTerms"}>
+                <div className={"firstScreen privacy"}>
                     <div className={"content container"}>
-                        <h1 className={"title"}>
+                        <h1 className={"title mainTitle"}>
                             Welcome to our Privacy Policy
                         </h1>
                         <p className={"subtitle"}>

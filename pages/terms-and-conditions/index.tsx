@@ -10,10 +10,10 @@ const TermsAndConditionsComponent: NextPage = () => {
             <Head>
                 <title>Terms and Conditions | UDS Systems</title>
             </Head>
-            <main className={"main privacy"}>
-                <div className={"firstScreen"}>
+            <main className={"main privacyAndTerms"}>
+                <div className={"firstScreen terms"}>
                     <div className={"content container"}>
-                        <h1 className={"title"}>
+                        <h1 className={"title mainTitle"}>
                             Welcome to our <br/>
                             Terms and Conditions
                         </h1>
