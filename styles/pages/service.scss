@@ -1,8 +1,8 @@
 @import "../mixins";
 
-.servicePage{
+.servicePage {
 
-  .firstScreen{
+  .firstScreen {
     background-image: url("../../assets/services/microsoft_365_sales/header_bg.webp");
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,54 +23,93 @@
         max-width: 638px;
         text-align: left;
       }
-      .button{
+
+      .button {
         margin: initial;
       }
     }
+
     @media screen and (max-width: 1024px) {
       padding-top: 37px;
       padding-bottom: 52px;
     }
   }
 
-  .turnkeySettings{
-    .content{
+  .turnkeySettings {
+    .content {
       display: flex;
       flex-direction: column;
       gap: 20px;
     }
   }
 
-  .benefits{
+  .benefits {
     background-color: $light-bg;
-    .benefitsList{
+
+    .benefitsList {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 50px;
     }
-    .benefit{
+
+    .benefit {
       display: grid;
       grid-template-rows: 1fr 0.4fr 1fr;
       justify-items: center;
       align-items: center;
       grid-gap: 10px;
-      .benefitIcon{
+
+      .benefitIcon {
         margin-bottom: 33px;
       }
-      .title{
+
+      .title {
         @include fonts("Montserrat", 600, 24px, 120%);
         color: $blue-primary;
         text-align: center;
         align-self: center;
       }
-      .paragraph{
+
+      .paragraph {
         align-self: self-start;
       }
     }
   }
-  .objections{
+
+  .aboutService {
+    .content {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1.5fr;
+      align-items: center;
+
+      .lightningIcon {
+        justify-self: center;
+        align-self: stretch;
+        width: 185px;
+        height: auto;
+      }
+
+      .paragraph {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .left{
+        text-align: left;
+      }
+
+      .right {
+        text-align: right;
+      }
+    }
+  }
+
+  .objections {
     background-color: $light-bg;
-    .objectionThumbnail{
+
+    .objectionThumbnail {
       width: 336px;
       height: 210px;
       display: flex;
@@ -78,52 +117,96 @@
       margin-bottom: 60px;
     }
 
-    .objectionList{
+    .objectionList {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 40px;
     }
-    .objection{
+
+    .objection {
       display: grid;
       grid-template-rows: 1fr 2fr;
       justify-items: center;
       align-items: center;
       grid-gap: 10px;
-      .title{
+
+      .title {
         @include fonts("Montserrat", 600, 18px, 130%);
         color: $blue-primary;
         align-self: center;
       }
-      .paragraph{
+
+      .paragraph {
         align-self: self-start;
       }
     }
   }
-  .serviceRoadmap{
-    .serviceMap{
+
+  .resultBenefits{
+    .block {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+
+      .title {
+        @include fonts("Montserrat", 600, 18px, 130%);
+        letter-spacing: 0.01em;
+        color: $blue-primary;
+        margin: 0;
+      }
+
+
+    }
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      img {
+        justify-self: center;
+        align-self: center;
+      }
+
+      .left, .right {
+        display: grid;
+        grid-template-rows: 1fr 0.5fr;
+        grid-gap: 44px;
+      }
+
+      @media screen and (max-width: 1024px) {
+        display: none;
+      }
+    }
+  }
+
+  .serviceRoadmap {
+    .serviceMap {
       width: 100%;
       height: auto;
     }
   }
-  .about{
+
+  .about {
     background-color: $light-bg;
-    .content{
+
+    .content {
       background-color: $white;
       padding: 20px 40px;
       display: flex;
       align-items: center;
       gap: 10px;
 
-      .paragraphSection{
+      .paragraphSection {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        .paragraph{
+
+        .paragraph {
           text-align: left;
         }
       }
 
-      .partnerLogo{
+      .partnerLogo {
         border-left: 1px solid $border;
       }
     }

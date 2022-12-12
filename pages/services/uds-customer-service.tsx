@@ -2,6 +2,14 @@ import {NextPage} from "next";
 import Head from "next/head";
 import Image from "next/image";
 import benefitItem from "../../assets/services/microsoft_365_sales/compromise.svg";
+import lightningIcon from "../../assets/services/customer-services/lightning_icon.svg";
+import quickStart from "../../assets/services/customer-services/cs_sales_map.svg";
+import lampIcon from "../../assets/services/customer-services/lamp_icon.svg";
+import roadmap from "../../assets/services/customer-services/cs_roadmap.webp";
+import partnerLogo from "../../assets/services/microsoft_365_sales/partner_logo.svg";
+import BookServiceForm from "../../components/sharedComponents/BookServiceForm";
+import OurCases from "../../components/sharedComponents/OurCases";
+import Contacts from "../../components/sharedComponents/Contacts";
 
 const UdsCustomerService: NextPage = () => {
     return (
@@ -30,7 +38,6 @@ const UdsCustomerService: NextPage = () => {
                         </button>
                     </div>
                 </div>
-
                 <div className={"turnkeySettings section"}>
                     <h2 className={"pageTitle container"}>Get Turnkey Settings In 3-5 Weeks</h2>
                     <div className={"content container"}>
@@ -82,8 +89,103 @@ const UdsCustomerService: NextPage = () => {
                             </p>
                         </div>
                     </div>
+                </div>
+                <div className={"aboutService section"}>
+                    <h2 className={"pageTitle"}>About Dynamics 365 Customer Service superpower</h2>
+                    <div className={"content container"}>
+                        <div className={"paragraph left"}>
+                            <p>Automation of all service processes</p>
+                            <p>Visualization of key
+                                customer service statistics</p>
+                            <p>Сustomized reporting
+                                for the client care department</p>
+                            <p>Easy management of tasks and notifications</p>
+                        </div>
+                        <Image className={"lightningIcon"} src={lightningIcon} alt={"icon"}/>
+                        <div className={"paragraph right"}>
+                            <p>Fast customer identification</p>
+                            <p>Convenient storage of client profiles</p>
+                            <p>Increasing customer loyalty</p>
+                            <p>Ensuring a responsive support</p>
+                        </div>
+                    </div>
+                </div>
+                <div className={"quickStart section"}>
+                    <h2 className={"pageTitle"}>UDS Quick Start Customer Service</h2>
+                    <div className={"container content"}>
+                        <Image src={quickStart} alt={"Quick Start Map"}/>
+                    </div>
+                </div>
+                <div className={"resultBenefits section"}>
+                    <h2 className={"pageTitle"}>You will be pleased to know</h2>
+                    <div className="content container">
+                        <div className="left">
+                            <div className="block">
+                                <p className="title">The results will match your expectations.</p>
+                                <p className={"paragraph"}>
+                                    We start working on the project only after gathering all the requirements and goal
+                                    approval. You will be
+                                    informed about project progress and can always make sure everything goes according
+                                    to plan.
+                                </p>
+                            </div>
+                            <div className="block">
+                                <p className="title">The budget is fixed and transparent.</p>
+                                <p className={"paragraph"}>
+                                    The service provides a full and clear scope of settings necessary to launch the
+                                    system for your company.
+                                </p>
+                            </div>
+                        </div>
+                        <Image src={lampIcon} alt={"Lamp Icon"}/>
+                        <div className="right">
+                            <div className="block">
+                                <p className="title">We will help your team to master the new CRM.</p>
+                                <p className={"paragraph"}>
+                                    Quick Start Customer Service by UDS Systems includes a training programme for
+                                    employees. We will arrange a
+                                    comprehensive overview of your Dynamics 365 Customer Service for your team and
+                                    answer any questions you might
+                                    face.
+                                </p>
+                            </div>
+                            <div className="block">
+                                <p className="title">The product will fit your industry.</p>
+                                <p className={"paragraph"}>
+                                    Dynamics 365 is highly-customizable. UDS Systems has field-tested it for 15
+                                    years in various scenarios.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className={"serviceRoadmap section"}>
+                    <h2 className={"pageTitle"}>Service Roadmap</h2>
+                    <div className={"container content"}>
+                        <Image src={roadmap} alt={"Map"} className={"serviceMap"}/>
+                    </div>
+                </div>
+                <div className={"about section"}>
+                    <h2 className={"pageTitle"}>About us</h2>
+                    <div className={"content container"}>
+                        <div className={"paragraphSection"}>
+                            <p className={"paragraph"}>
+                                Since 2007, we provide Dynamics 365 R&D services, migrations, projects, and support
+                                services worldwide. We have earned Microsoft Gold Application Development competency. We
+                                love our job and aim to keep leadership in the chosen business area. Therefore, we value
+                                our reputation as well as long-term relationships and are responsible for the results.
+                            </p>
+                            <p className={"paragraph"}>
+                                By the way, we at UDS Systems also use plenty of Microsoft products built on Dynamics
+                                365 in our inner workings and find these solutions powerful. </p>
+                        </div>
+                        <Image className={"partnerLogo"} src={partnerLogo} alt={"Partner Logo"}/>
+                    </div>
 
                 </div>
+                <BookServiceForm/>
+                <OurCases/>
+                <Contacts/>
             </main>
         </div>
     );
