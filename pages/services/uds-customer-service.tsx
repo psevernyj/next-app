@@ -7,7 +7,7 @@ import quickStart from "../../assets/services/customer-services/cs_sales_map.svg
 import lampIcon from "../../assets/services/customer-services/lamp_icon.svg";
 import roadmap from "../../assets/services/customer-services/cs_roadmap.webp";
 import partnerLogo from "../../assets/services/microsoft_365_sales/partner_logo.svg";
-import BookServiceForm from "../../components/sharedComponents/BookServiceForm";
+import BookServiceForm from "../../components/forms/BookServiceForm";
 import OurCases from "../../components/sharedComponents/OurCases";
 import Contacts from "../../components/sharedComponents/Contacts";
 

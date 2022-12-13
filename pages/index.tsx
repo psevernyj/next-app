@@ -30,11 +30,11 @@ import banking from "../assets/industries/banking.webp";
 import {openExternalTab} from "../helpers/openLinks";
 
 const OurCases = dynamic(() => import("../components/sharedComponents/OurCases"))
-const NeedHelpForm = dynamic(() => import("../components/sharedComponents/NeedHelpForm"))
+const NeedHelpForm = dynamic(() => import("../components/forms/NeedHelpForm"))
 const ClientsGeography = dynamic(() => import("../components/sharedComponents/ClientsGeography"))
 const PopularAddOns = dynamic(() => import("../components/sharedComponents/PopularAddOns"))
 const MostViewedArticles = dynamic(() => import("../components/sharedComponents/MostViewedArticles"))
-const SubscribeToNewsForm = dynamic(() => import("../components/sharedComponents/SubscribeToNewsForm"))
+const SubscribeToNewsForm = dynamic(() => import("../components/forms/SubscribeToNewsForm"))
 const Contacts = dynamic(() => import("../components/sharedComponents/Contacts"))
 
 const RootComponent: NextPage = () => {

@@ -2,7 +2,7 @@ import type {NextPage} from 'next';
 import Head from 'next/head';
 import React from "react";
 import CaseCard from "../../components/views/CaseCard";
-import NeedHelpForm from "../../components/sharedComponents/NeedHelpForm";
+import NeedHelpForm from "../../components/forms/NeedHelpForm";
 import Contacts from "../../components/sharedComponents/Contacts";
 
 
