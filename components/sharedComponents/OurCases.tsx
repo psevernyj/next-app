@@ -12,9 +12,10 @@ import powerVA from '../../assets/implemented-products/powerVA.webp';
 import powerAutomate from '../../assets/implemented-products/powerAutomate.webp';
 
 import Tag from '../views/Tag';
-import { openInternalTab } from '../../helpers/openLinks';
+import { useRouter } from "next/router";
 
 const OurCases = () => {
+  const router = useRouter();
   return (
     <div className={'ourCases section'}>
       <h2 className={'pageTitle'}>Our Cases</h2>
@@ -141,7 +142,8 @@ const OurCases = () => {
       </div>
       <button
         className={'button orangeButton bigButton'}
-        onClick={openInternalTab('/cases')}
+        onClick={() => router.push('/cases')}
+
       >
         More Cases
       </button>

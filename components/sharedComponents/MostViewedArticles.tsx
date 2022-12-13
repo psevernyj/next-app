@@ -9,10 +9,11 @@ import logo2 from '../../assets/articles/logo_2.webp';
 import logo3 from '../../assets/articles/logo_3.webp';
 import logo4 from '../../assets/articles/logo_4.webp';
 import arrow from '../../assets/cases/orange_arrow.webp';
+import { useRouter } from "next/router";
 
-import { openInternalTab } from '../../helpers/openLinks';
 
 const MostViewedArticles = () => {
+  const router = useRouter();
   return (
     <div className={'mostViewedArticles section'}>
       <h2 className={'pageTitle'}>Most Viewed Articles</h2>
@@ -150,7 +151,7 @@ const MostViewedArticles = () => {
       </div>
       <button
         className={'button orangeButton bigButton'}
-        onClick={openInternalTab('/blog')}
+        onClick={() => router.push('/blog')}
       >
         view all Articles
       </button>

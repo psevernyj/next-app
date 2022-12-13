@@ -4,9 +4,12 @@ import Image from 'next/image';
 import sa from '../../assets/add-ons/SA.webp';
 import mc from '../../assets/add-ons/MC.webp';
 import vm from '../../assets/add-ons/VM.webp';
-import { openInternalTab } from '../../helpers/openLinks';
+
+import { router } from "next/client";
+import { useRouter } from "next/router";
 
 const PopularAddOns = () => {
+  const router = useRouter();
   return (
     <div className={'popularAddons section'}>
       <h2 className={'pageTitle container'}>Our Popular Add-ons</h2>
@@ -35,7 +38,7 @@ const PopularAddOns = () => {
       </div>
       <button
         className={'button orangeButton bigButton'}
-        onClick={openInternalTab('/add-ons')}
+        onClick={() => router.push('/add-ons')}
       >
         view all add-ons
       </button>

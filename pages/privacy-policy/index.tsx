@@ -4,7 +4,7 @@ import Head from 'next/head';
 import { privacyItems } from '../../utils/privacyAndTermsData';
 
 const Accordion = dynamic(
-  () => import('../../components/sharedComponents/Accordion')
+  () => import('../../components/views/Accordion')
 );
 const Contacts = dynamic(
   () => import('../../components/sharedComponents/Contacts')
