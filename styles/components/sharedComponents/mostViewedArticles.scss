@@ -1,4 +1,4 @@
-@import "../../mixins";
+@import '../../mixins';
 
 .mostViewedArticles {
   .articleCards {
@@ -14,7 +14,6 @@
     height: 400px;
     background-color: $light-bg;
     border-radius: 5px;
-
 
     .imageContent {
       position: relative;
@@ -39,12 +38,12 @@
       grid-gap: 15px;
 
       .publicDate {
-        @include fonts("Montserrat", 500, 14px, 140%);
+        @include fonts('Montserrat', 500, 14px, 140%);
         color: $black-primary;
       }
 
       .title {
-        @include fonts("Montserrat", 600, 19px, 23px);
+        @include fonts('Montserrat', 600, 19px, 23px);
         color: $blue-primary;
       }
 
@@ -56,17 +55,18 @@
   }
 
   @media screen and (max-width: 1125px) {
-    .articleCards{
+    .articleCards {
       justify-content: center;
     }
-    .card{
-      &:nth-child(3), &:nth-child(4) {
+    .card {
+      &:nth-child(3),
+      &:nth-child(4) {
         display: none;
       }
     }
   }
   @media screen and (max-width: 595px) {
-    .articleCards{
+    .articleCards {
       flex-direction: column;
       align-items: center;
     }

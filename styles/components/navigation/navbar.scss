@@ -1,4 +1,4 @@
-@import "styles/mixins";
+@import 'styles/mixins';
 
 .header {
   position: sticky;
@@ -12,7 +12,6 @@
   padding: 20px 0;
   justify-content: space-between;
   align-items: center;
-
 
   .menuList {
     display: flex;
@@ -46,7 +45,7 @@
   }
 
   .navLink {
-    @include fonts("Montserrat", 500, 16px, 20px);
+    @include fonts('Montserrat', 500, 16px, 20px);
     position: relative;
     transition: all 0.2s;
   }
@@ -58,11 +57,11 @@
     align-items: center;
     gap: 10px;
   }
-  .mainItems{
+  .mainItems {
     padding-left: 20px;
   }
-  .dropdown{
-    .subLink{
+  .dropdown {
+    .subLink {
       padding: 6px 20px;
     }
   }
@@ -88,18 +87,18 @@
     }
 
     .navLink {
-      @include fonts("Montserrat", 600, 14px, 17px);
+      @include fonts('Montserrat', 600, 14px, 17px);
       //position: relative;
       text-transform: uppercase;
 
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         width: 0;
         bottom: -5px;
         left: 0;
         height: 2px;
-        background-color: #FF8F3E;
+        background-color: #ff8f3e;
         transition: all 0.2s;
       }
 
@@ -112,13 +111,13 @@
 
     .active {
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         width: 100%;
         bottom: -5px;
         left: 0;
         height: 2px;
-        background-color: #FF8F3E;
+        background-color: #ff8f3e;
         transition: all 0.2s;
       }
     }
@@ -141,10 +140,10 @@
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
       border-radius: 5px;
       display: none;
-      .subLink{
-        @include fonts("Montserrat", 500, 14px, 140%);
+      .subLink {
+        @include fonts('Montserrat', 500, 14px, 140%);
         padding: 8px 20px;
-        &:hover{
+        &:hover {
           background-color: $blue-primary;
           color: #fff;
           border-radius: 5px;
@@ -154,6 +153,5 @@
         display: block;
       }
     }
-
   }
 }

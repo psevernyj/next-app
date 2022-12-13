@@ -1,21 +1,21 @@
-@import "components/navigation/navbar";
-@import "components/navigation/footer";
-@import "pages/homePage";
-@import "pages/casesPage";
-@import "pages/service";
-@import "pages/privacyAndTerms";
-@import "components/sharedComponents/ourCases";
-@import "components/sharedComponents/popularAddons";
-@import "components/views/tag";
-@import "components/sharedComponents/mostViewedArticles";
-@import "components/sharedComponents/contacts";
-@import "components/sharedComponents/accordion";
-@import "components/views/caseCard";
-@import "components/views/modal";
+@import 'components/navigation/navbar';
+@import 'components/navigation/footer';
+@import 'pages/homePage';
+@import 'pages/casesPage';
+@import 'pages/service';
+@import 'pages/privacyAndTerms';
+@import 'components/sharedComponents/ourCases';
+@import 'components/sharedComponents/popularAddons';
+@import 'components/views/tag';
+@import 'components/sharedComponents/mostViewedArticles';
+@import 'components/sharedComponents/contacts';
+@import 'components/sharedComponents/accordion';
+@import 'components/views/caseCard';
+@import 'components/views/modal';
 
 ////////////Global styles/////////////
 
-.button{
+.button {
   text-transform: uppercase;
   margin: auto;
   display: flex;
@@ -23,21 +23,21 @@
   align-items: center;
 }
 
-.smallButton{
+.smallButton {
   padding: 0 18px;
   height: 40px;
   width: auto;
-  @include fonts("Montserrat", 700, 12px, 15px);
+  @include fonts('Montserrat', 700, 12px, 15px);
 }
 
-.bigButton{
+.bigButton {
   height: 64px;
   width: 317px;
   padding: 0 18px;
-  @include fonts("Montserrat", 700, 16px, 20px);
+  @include fonts('Montserrat', 700, 16px, 20px);
 }
 
-.orangeButton{
+.orangeButton {
   //background: linear-gradient(269.64deg, #FF8F3E 4.23%, #FFB178 91.19%);
   background-color: $orange-primary;
   color: white;
@@ -47,7 +47,7 @@
   gap: 10px;
 }
 
-.blueButton{
+.blueButton {
   background-color: white;
   color: $blue-primary;
   border: 2px solid $blue-primary;
@@ -58,7 +58,7 @@
   width: 100%;
   max-width: 1106px;
   margin: auto;
-  @media screen and (max-width: 1100px){
+  @media screen and (max-width: 1100px) {
     padding-right: 1rem;
     padding-left: 1rem;
   }
@@ -69,7 +69,7 @@
   flex: 1;
 
   .title {
-    @include fonts("Gilroy-Light", 400, 46px, 150%);
+    @include fonts('Gilroy-Light', 400, 46px, 150%);
     color: $white;
     @media only screen and (max-width: 1024px) {
       font-size: 40px;
@@ -81,7 +81,7 @@
   }
 
   .subtitle {
-    @include fonts("Montserrat", 600, 22px, 130%);
+    @include fonts('Montserrat', 600, 22px, 130%);
     color: $white;
     @media only screen and (max-width: 1024px) {
       font-size: 16px;
@@ -92,51 +92,50 @@
     }
   }
 
-  .pageTitle{
-    @include fonts("Gilroy-Light", 400, 46px, 120%);
+  .pageTitle {
+    @include fonts('Gilroy-Light', 400, 46px, 120%);
     color: $blue-primary;
     text-align: center;
     padding-bottom: 40px;
     text-transform: capitalize;
-    @media screen and (max-width: 450px){
+    @media screen and (max-width: 450px) {
       font-size: 28px;
       padding-bottom: 20px;
     }
   }
 
-  .pageSubtitle{
-    @include fonts("Montserrat", 600, 24px, 29px);
+  .pageSubtitle {
+    @include fonts('Montserrat', 600, 24px, 29px);
     color: $blue-primary;
     text-align: center;
     padding-bottom: 40px;
 
-    @media screen and (max-width: 450px){
+    @media screen and (max-width: 450px) {
       font-size: 17px;
       line-height: 21px;
       padding-bottom: 20px;
     }
   }
 
-  .section{
+  .section {
     padding: 60px 0 90px;
-    @media screen and (max-width: 1024px){
+    @media screen and (max-width: 1024px) {
       padding: 30px 0 60px;
     }
   }
-  .paragraph{
-    @include fonts("Montserrat", 500, 16px, 140%);
+  .paragraph {
+    @include fonts('Montserrat', 500, 16px, 140%);
     text-align: center;
   }
 }
-
 
 //////////Reset browser styles///////////
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Montserrat, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Montserrat, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -146,7 +145,9 @@ a {
 * {
   box-sizing: border-box;
 }
-*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+*:where(
+    :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)
+  ) {
   all: unset;
   display: revert;
 }
@@ -155,17 +156,21 @@ a {
 *::after {
   box-sizing: border-box;
 }
-a, button {
+a,
+button {
   cursor: pointer;
   outline: none;
 }
-ol, ul, menu {
+ol,
+ul,
+menu {
   list-style: none;
 }
 img {
   max-width: 100%;
 }
-input, textarea {
+input,
+textarea {
   -webkit-user-select: auto;
 }
 textarea {
@@ -181,14 +186,14 @@ meter {
 :where([hidden]) {
   display: none;
 }
-:where([contenteditable]:not([contenteditable="false"])) {
+:where([contenteditable]:not([contenteditable='false'])) {
   -moz-user-modify: read-write;
   -webkit-user-modify: read-write;
   overflow-wrap: break-word;
   -webkit-line-break: after-white-space;
   -webkit-user-select: auto;
 }
-:where([draggable="true"]) {
+:where([draggable='true']) {
   -webkit-user-drag: element;
 }
 //::-webkit-scrollbar {

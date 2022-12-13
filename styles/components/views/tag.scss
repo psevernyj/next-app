@@ -1,6 +1,6 @@
-@import "../../mixins";
+@import '../../mixins';
 
-.tag{
+.tag {
   height: 44px;
   padding: 7px 10px;
   display: flex;
@@ -8,14 +8,14 @@
   justify-content: center;
   background-color: $dark-bg;
   border-radius: 5px;
-  @include fonts("Montserrat", 500, 14px, 140%);
+  @include fonts('Montserrat', 500, 14px, 140%);
   text-transform: capitalize;
   color: $blue-primary;
   cursor: pointer;
   transition: all ease-out 0.1s;
 
   .tagTitle {
-    @include fonts("Montserrat", 600, 8px, 10px);
+    @include fonts('Montserrat', 600, 8px, 10px);
     color: $black-primary;
     text-transform: uppercase;
   }

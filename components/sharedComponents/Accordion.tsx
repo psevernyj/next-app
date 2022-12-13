@@ -1,30 +1,30 @@
-import React, {ReactNode, useState} from 'react';
-import AccordionItem from "./AccordionItem";
+import React, { ReactNode, useState } from 'react';
+import AccordionItem from './AccordionItem';
 
 export type AccordionData = {
-    title: string;
-    content: ReactNode
-}
+  title: string;
+  content: ReactNode;
+};
 
-const Accordion = ({items}: { items: Array<AccordionData> }) => {
+const Accordion = ({ items }: { items: Array<AccordionData> }) => {
+  const [currentIndex, setCurrentIndex] = useState(-1);
+  const btnOnclick = (idx: number) => {
+    // setCurrentIndex(idx)
+    setCurrentIndex((currentValue) => (currentValue !== idx ? idx : -1));
+  };
 
-    const [currentIndex, setCurrentIndex] = useState(-1);
-    const btnOnclick = (idx: number) => {
-        // setCurrentIndex(idx)
-        setCurrentIndex((currentValue) => currentValue !==idx ? idx : -1)
-    }
-
-
-    return (
-        <ul className={"accordion section"}>
-            {
-                items.map((item, idx) => (
-                    <AccordionItem key={idx} data={item} isOpen={idx === currentIndex}
-                                   btnOnclick={() => btnOnclick(idx)}/>
-                ))
-            }
-        </ul>
-    );
+  return (
+    <ul className={'accordion section'}>
+      {items.map((item, idx) => (
+        <AccordionItem
+          key={idx}
+          data={item}
+          isOpen={idx === currentIndex}
+          btnOnclick={() => btnOnclick(idx)}
+        />
+      ))}
+    </ul>
+  );
 };
 
 export default Accordion;

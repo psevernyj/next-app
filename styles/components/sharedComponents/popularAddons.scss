@@ -1,4 +1,4 @@
-@import "../../mixins";
+@import '../../mixins';
 
 .popularAddons {
   background-color: $light-bg;
@@ -6,40 +6,40 @@
     display: flex;
     justify-content: space-between;
   }
-  .addOn{
+  .addOn {
     display: grid;
     grid-template-rows: 0.5fr 2fr 0.5fr;
     grid-gap: 44px;
     justify-items: center;
     margin-bottom: 40px;
-    .title{
-      @include fonts("Montserrat", 600, 24px, 29px);
+    .title {
+      @include fonts('Montserrat', 600, 24px, 29px);
       color: $blue-primary;
-      @media screen and (max-width: 800px){
+      @media screen and (max-width: 800px) {
         font-size: 17px;
         line-height: 21px;
       }
     }
-    .downloadsInfo{
-      @include fonts("Gilroy-Light", 400, 48px, 99%);
+    .downloadsInfo {
+      @include fonts('Gilroy-Light', 400, 48px, 99%);
       color: $blue-primary;
-      .inscription{
+      .inscription {
         font-size: 22px;
       }
-      @media screen and (max-width: 800px){
+      @media screen and (max-width: 800px) {
         font-size: 28px;
         line-height: 21px;
-        .inscription{
+        .inscription {
           font-size: 15px;
         }
       }
     }
   }
-  @media screen and (max-width: 560px){
-    .addOns{
+  @media screen and (max-width: 560px) {
+    .addOns {
       flex-direction: column;
     }
-    .addOn{
+    .addOn {
       grid-gap: 20px;
       margin-bottom: 20px;
     }

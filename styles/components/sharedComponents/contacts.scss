@@ -1,30 +1,30 @@
-@import "../../mixins";
+@import '../../mixins';
 
-.contactsSection{
+.contactsSection {
   background-color: $blue-primary;
-  .contactsTitle{
-    @include fonts("Gilroy-Light", 400, 46px, 120%);
+  .contactsTitle {
+    @include fonts('Gilroy-Light', 400, 46px, 120%);
     color: $white;
     text-align: center;
     padding-bottom: 40px;
-    @media screen and (max-width: 450px){
+    @media screen and (max-width: 450px) {
       font-size: 28px;
       padding-bottom: 20px;
     }
   }
 
-  .content{
+  .content {
     display: flex;
     gap: 160px;
     justify-content: center;
     margin-bottom: 40px;
-    .contact{
+    .contact {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 44px;
     }
-    .thumbnail{
+    .thumbnail {
       background: rgba(247, 248, 250, 0.1);
       border-radius: 70px;
       padding: 36px;
@@ -46,30 +46,30 @@
         background: $orange-primary;
       }
     }
-    .link{
-      @include fonts("Montserrat", 600, 24px, 29px);
+    .link {
+      @include fonts('Montserrat', 600, 24px, 29px);
       color: $white;
     }
   }
-  @media screen and (max-width: 1024px){
-    .content{
+  @media screen and (max-width: 1024px) {
+    .content {
       gap: 79px;
     }
   }
-  @media screen and (max-width: 1024px){
-    .content{
+  @media screen and (max-width: 1024px) {
+    .content {
       gap: 61px;
-      .contact{
+      .contact {
         gap: 20px;
       }
-      .link{
+      .link {
         font-size: 17px;
         line-height: 21px;
       }
     }
   }
-  @media screen and (max-width: 450px){
-    .content{
+  @media screen and (max-width: 450px) {
+    .content {
       flex-direction: column;
     }
   }

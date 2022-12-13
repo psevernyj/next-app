@@ -1,12 +1,13 @@
-@import "../../mixins";
+@import '../../mixins';
 
 .caseCard {
   background-color: $light-bg;
   border-radius: 5px;
   max-width: 342px;
   transition: all 0.5s ease-in-out;
-  &:hover{
-    box-shadow: 0px 3px 6px rgba(14, 31, 53, 0.08), 0px 6px 12px rgba(14, 31, 53, 0.12), 0px 8px 24px rgba(14, 31, 53, 0.08);
+  &:hover {
+    box-shadow: 0px 3px 6px rgba(14, 31, 53, 0.08),
+      0px 6px 12px rgba(14, 31, 53, 0.12), 0px 8px 24px rgba(14, 31, 53, 0.08);
   }
   .thumbnail {
     width: 100%;
@@ -30,14 +31,14 @@
         gap: 6px;
 
         .title {
-          @include fonts("Montserrat", 500, 14px, 140%);
+          @include fonts('Montserrat', 500, 14px, 140%);
           color: $black-primary;
         }
       }
     }
 
     .title {
-      @include fonts("Montserrat", 600, 18px, 130%);
+      @include fonts('Montserrat', 600, 18px, 130%);
       color: $blue-primary;
     }
 
@@ -52,13 +53,13 @@
       flex-wrap: wrap;
       gap: 5px;
     }
-    .arrowButton{
+    .arrowButton {
       height: 44px;
     }
   }
-  @media screen and (max-width: 760px){
-    .content{
-      .title{
+  @media screen and (max-width: 760px) {
+    .content {
+      .title {
         font-size: 17px;
       }
     }

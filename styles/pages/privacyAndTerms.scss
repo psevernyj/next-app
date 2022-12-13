@@ -1,4 +1,4 @@
-@import "../mixins";
+@import '../mixins';
 
 .privacyAndTerms {
   background-color: $light-bg;
@@ -24,11 +24,11 @@
   }
 
   .privacy {
-    background-image: url("../../assets/privacy-and-terms/privacy_bg.webp");
+    background-image: url('../../assets/privacy-and-terms/privacy_bg.webp');
   }
 
   .terms {
-    background-image: url("../../assets/privacy-and-terms/terms_bg.webp");
+    background-image: url('../../assets/privacy-and-terms/terms_bg.webp');
   }
 
   @media screen and (max-width: 1024px) {
@@ -54,10 +54,10 @@
   }
   @media screen and (max-width: 746px) {
     .privacy {
-      background-image: url("../../assets/privacy-and-terms/privacy_bg_mobile.webp");
+      background-image: url('../../assets/privacy-and-terms/privacy_bg_mobile.webp');
     }
     .terms {
-      background-image: url("../../assets/privacy-and-terms/terms_bg_mobile.webp");
+      background-image: url('../../assets/privacy-and-terms/terms_bg_mobile.webp');
     }
   }
 }

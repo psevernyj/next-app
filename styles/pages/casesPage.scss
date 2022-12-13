@@ -1,16 +1,15 @@
 .casesPage {
-
   .input {
     width: 342px;
     height: 74px;
-    background: #FFFFFF;
-    border: 1px solid #C4CBD0;
+    background: #ffffff;
+    border: 1px solid #c4cbd0;
     border-radius: 5px;
     padding: 20px;
   }
 
   .firstScreen {
-    background-image: url("../../assets/cases/cases_page_header_bg.webp");
+    background-image: url('../../assets/cases/cases_page_header_bg.webp');
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 94px;
@@ -81,7 +80,7 @@
       height: 473px;
 
       .container {
-        .title{
+        .title {
           width: 83%;
         }
         .subtitle {
@@ -91,8 +90,8 @@
     }
   }
   @media screen and (max-width: 760px) {
-    .firstScreen{
-      background-image: url("../../assets/cases/case_page_header_bg_mobile.webp");
+    .firstScreen {
+      background-image: url('../../assets/cases/case_page_header_bg_mobile.webp');
       padding-top: 50px;
       height: 382px;
     }
