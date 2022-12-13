@@ -1,8 +1,14 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
 import { termsItems } from '../../utils/privacyAndTermsData';
-import Accordion from '../../components/sharedComponents/Accordion';
-import Contacts from '../../components/sharedComponents/Contacts';
+
+const Accordion = dynamic(
+  () => import('../../components/sharedComponents/Accordion')
+);
+const Contacts = dynamic(
+  () => import('../../components/sharedComponents/Contacts')
+);
 
 const TermsAndConditionsComponent: NextPage = () => {
   return (

@@ -1,15 +1,23 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 
 import benefitItem from '../../assets/services/microsoft_365_sales/compromise.svg';
 import quickStart from '../../assets/services/microsoft_365_sales/sales_map.svg';
 import objectionPic from '../../assets/services/microsoft_365_sales/man_icon.svg';
 import roadmap from '../../assets/services/microsoft_365_sales/roadmap.webp';
 import partnerLogo from '../../assets/services/microsoft_365_sales/partner_logo.svg';
-import BookServiceForm from '../../components/forms/BookServiceForm';
-import OurCases from '../../components/sharedComponents/OurCases';
-import Contacts from '../../components/sharedComponents/Contacts';
+
+const BookServiceForm = dynamic(
+  () => import('../../components/forms/BookServiceForm')
+);
+const OurCases = dynamic(
+  () => import('../../components/sharedComponents/OurCases')
+);
+const Contacts = dynamic(
+  () => import('../../components/sharedComponents/Contacts')
+);
 
 const UdsSalesStart: NextPage = () => {
   return (
