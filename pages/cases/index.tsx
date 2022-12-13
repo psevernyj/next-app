@@ -1,9 +1,17 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import React from 'react';
-import CaseCard from '../../components/views/CaseCard';
-import NeedHelpForm from '../../components/forms/NeedHelpForm';
-import Contacts from '../../components/sharedComponents/Contacts';
+import dynamic from 'next/dynamic';
+
+const CaseCard = dynamic(
+  () => import('../../components/views/CaseCard')
+);
+const NeedHelpForm = dynamic(
+  () => import('../../components/forms/NeedHelpForm')
+);
+const Contacts = dynamic(
+  () => import('../../components/sharedComponents/Contacts')
+);
 
 const CasesComponent: NextPage = () => {
   return (

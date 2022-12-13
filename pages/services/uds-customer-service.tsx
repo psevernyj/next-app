@@ -89,7 +89,7 @@ const UdsCustomerService: NextPage = () => {
               <Image src={benefitItem} alt={'Icon'} className={'benefitIcon'} />
               <p className={'title'}>Fast troubleshooting</p>
               <p className={'paragraph'}>
-                We promptly inform you about the project's progress and are
+                We promptly inform you about the project`s progress and are
                 generous with clarifications and assistance when necessary.
               </p>
             </div>
