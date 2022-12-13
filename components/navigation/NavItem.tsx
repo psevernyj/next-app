@@ -15,21 +15,22 @@ const NavItem: FC<NavItemProp> = ({
   submenu,
   text,
 }: NavItemProp): JSX.Element => {
-  const [dropdown, serDropdown] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
   return (
     <div className={'menu-items mainItems'}>
       {submenu ? (
-        <>
+        <div
+          onMouseEnter={() => setDropdown((prev) => !prev)}
+          onMouseLeave={() => setDropdown((prev) => !prev)}>
           <button
             aria-expanded={dropdown ? 'true' : 'false'}
-            onClick={() => serDropdown((prev) => !prev)}
           >
             <Link href={href} className={`navLink ${active ? 'active' : ''}`}>
               {text}
             </Link>
           </button>
           <Dropdown dropDownMenu={submenu} dropdown={dropdown} />
-        </>
+        </div>
       ) : (
         <Link href={href} className={`navLink ${active ? 'active' : ''}`}>
           {text}

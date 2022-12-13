@@ -97,7 +97,7 @@ const Navbar = () => {
   return (
     <header className={'header'}>
       <nav className={'nav container'}>
-        <Link href={'/'} onClick={() => setActiveIdx(0)}>
+        <Link href={'/'} onClick={() => setActiveIdx(-1)}>
           <Image src={udsLogo} alt={'Logo'} />
         </Link>
         <div className={'menuBar'} onClick={() => setNavActive(!navActive)}>
