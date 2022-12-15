@@ -1,9 +1,9 @@
-import React, { ReactNode } from "react";
+import React from 'react';
 import Image from 'next/image';
 import Tag from './Tag';
 import arrow from '../../assets/cases/orange_arrow.webp';
 
-type ArticleCardData = {
+export type ArticleCardData = {
   typeIcon: string;
   thumbnail: string;
   publicDate: string;
@@ -11,14 +11,20 @@ type ArticleCardData = {
   tagText: string;
 };
 
-const ArticleCard = ({content} : { content : ArticleCardData}) => {
+const ArticleCard = ({
+  content: { thumbnail, typeIcon, publicDate, title, tagText },
+}: {
+  content: ArticleCardData;
+}) => {
   return (
-    <div className={'card'}>
+    <div className={'articleCard'}>
       <div className={'imageContent'}>
         <Image
           className={'thumbnail'}
           src={thumbnail}
           alt={'Article thumbnail'}
+          width={100}
+          height={174}
         />
         <Image
           className={'type'}

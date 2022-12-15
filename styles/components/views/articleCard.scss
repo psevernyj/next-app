@@ -1,0 +1,54 @@
+@import "../../mixins";
+
+.articleCard {
+  width: 100%;
+  max-width: 342px;
+  //height: 400px;
+  background-color: $light-bg;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    box-shadow: 0px 3px 6px rgba(14, 31, 53, 0.08),
+    0px 6px 12px rgba(14, 31, 53, 0.12), 0px 8px 24px rgba(14, 31, 53, 0.08);
+  }
+
+  .imageContent {
+    position: relative;
+
+    .thumbnail {
+      width: 100%;
+      max-height: 213px;
+      height: auto;
+    }
+
+    .type {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  .content {
+    padding: 15px 20px;
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 1fr;
+    grid-gap: 15px;
+
+    .publicDate {
+      @include fonts('Montserrat', 500, 14px, 140%);
+      color: $black-primary;
+    }
+
+    .title {
+      @include fonts('Montserrat', 600, 19px, 23px);
+      color: $blue-primary;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

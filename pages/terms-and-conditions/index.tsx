@@ -3,9 +3,7 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import { termsItems } from '../../utils/privacyAndTermsData';
 
-const Accordion = dynamic(
-  () => import('../../components/views/Accordion')
-);
+const Accordion = dynamic(() => import('../../components/views/Accordion'));
 const Contacts = dynamic(
   () => import('../../components/sharedComponents/Contacts')
 );

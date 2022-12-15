@@ -21,10 +21,9 @@ const NavItem: FC<NavItemProp> = ({
       {submenu ? (
         <div
           onMouseEnter={() => setDropdown((prev) => !prev)}
-          onMouseLeave={() => setDropdown((prev) => !prev)}>
-          <button
-            aria-expanded={dropdown ? 'true' : 'false'}
-          >
+          onMouseLeave={() => setDropdown((prev) => !prev)}
+        >
+          <button aria-expanded={dropdown ? 'true' : 'false'}>
             <Link href={href} className={`navLink ${active ? 'active' : ''}`}>
               {text}
             </Link>

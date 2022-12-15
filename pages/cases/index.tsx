@@ -3,9 +3,7 @@ import Head from 'next/head';
 import React from 'react';
 import dynamic from 'next/dynamic';
 
-const CaseCard = dynamic(
-  () => import('../../components/views/CaseCard')
-);
+const CaseCard = dynamic(() => import('../../components/views/CaseCard'));
 const NeedHelpForm = dynamic(
   () => import('../../components/forms/NeedHelpForm')
 );

@@ -5,8 +5,8 @@ import sa from '../../assets/add-ons/SA.webp';
 import mc from '../../assets/add-ons/MC.webp';
 import vm from '../../assets/add-ons/VM.webp';
 
-import { router } from "next/client";
-import { useRouter } from "next/router";
+import { router } from 'next/client';
+import { useRouter } from 'next/router';
 
 const PopularAddOns = () => {
   const router = useRouter();

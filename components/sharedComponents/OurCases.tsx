@@ -12,7 +12,7 @@ import powerVA from '../../assets/implemented-products/powerVA.webp';
 import powerAutomate from '../../assets/implemented-products/powerAutomate.webp';
 
 import Tag from '../views/Tag';
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
 
 const OurCases = () => {
   const router = useRouter();
@@ -143,7 +143,6 @@ const OurCases = () => {
       <button
         className={'button orangeButton bigButton'}
         onClick={() => router.push('/cases')}
-
       >
         More Cases
       </button>

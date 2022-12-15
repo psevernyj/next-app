@@ -8,5 +8,3 @@ export const openExternalTab =
   () =>
     openInNewTab(url);
 ////
-
-

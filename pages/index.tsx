@@ -28,6 +28,7 @@ import propM from '../assets/industries/prop_managemet.webp';
 import energy from '../assets/industries/energy_sector.webp';
 import banking from '../assets/industries/banking.webp';
 import { openExternalTab } from '../helpers/openLinks';
+import { articleCards } from "../utils/articleCardData";
 
 const OurCases = dynamic(
   () => import('../components/sharedComponents/OurCases')
@@ -429,7 +430,7 @@ const RootComponent: NextPage = () => {
             view courses
           </button>
         </div>
-        <MostViewedArticles />
+        <MostViewedArticles cards={articleCards}/>
         <SubscribeToNewsForm />
         <Contacts />
       </main>
