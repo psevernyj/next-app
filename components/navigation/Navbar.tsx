@@ -11,12 +11,12 @@ const menuList: Array<NavItemProp> = [
     href: '/services',
     submenu: [
       {
-        text: 'UDS Customer Service',
-        href: '/services/uds-customer-service',
-      },
-      {
         text: 'UDS Sales Start',
         href: '/services/uds-sales-start',
+      },
+      {
+        text: 'UDS Customer Service',
+        href: '/services/uds-customer-service',
       },
     ],
   },

@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode } from 'react';
 import Image from 'next/image';
 
 import Tag from '../views/Tag';
@@ -10,9 +10,9 @@ import logo3 from '../../assets/articles/logo_3.webp';
 import logo4 from '../../assets/articles/logo_4.webp';
 import arrow from '../../assets/cases/orange_arrow.webp';
 import { useRouter } from 'next/router';
-import ArticleCard, { ArticleCardData } from "../views/ArticleCard";
+import ArticleCard, { ArticleCardData } from '../views/ArticleCard';
 
-const MostViewedArticles = ({cards} : {cards: Array<ArticleCardData>}) => {
+const MostViewedArticles = ({ cards }: { cards: Array<ArticleCardData> }) => {
   const router = useRouter();
   return (
     <div className={'mostViewedArticles section'}>
@@ -52,7 +52,7 @@ const MostViewedArticles = ({cards} : {cards: Array<ArticleCardData>}) => {
         {/*  </div>*/}
         {/*</div>*/}
         {cards.map((item, idx) => (
-          <ArticleCard content={item} key={idx}/>
+          <ArticleCard content={item} key={idx} />
         ))}
 
         {/*<div className={'card'}>*/}

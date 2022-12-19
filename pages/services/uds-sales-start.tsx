@@ -4,9 +4,11 @@ import Image from 'next/image';
 import dynamic from 'next/dynamic';
 
 import benefitItem from '../../assets/services/microsoft_365_sales/compromise.svg';
-import quickStart from '../../assets/services/microsoft_365_sales/sales_map.svg';
+import quickStartDesktop from '../../assets/services/microsoft_365_sales/sales_map.svg';
+import quickStartMobile from '../../assets/services/microsoft_365_sales/sales_map_mobile.svg';
 import objectionPic from '../../assets/services/microsoft_365_sales/man_icon.svg';
 import roadmap from '../../assets/services/microsoft_365_sales/roadmap.webp';
+import roadmapMobile from '../../assets/services/microsoft_365_sales/roadmap_mobile.webp';
 import partnerLogo from '../../assets/services/microsoft_365_sales/partner_logo.svg';
 
 const BookServiceForm = dynamic(
@@ -52,7 +54,7 @@ const UdsSalesStart: NextPage = () => {
             Get Turnkey Settings In 3-5 Weeks
           </h2>
           <div className={'content container'}>
-            <p className={'paragraph'}>
+            <p className={'paragraph turnkeyParagraph'}>
               Push up your sales with Microsoft Dynamics 365 Sales and UDS
               Systems. Such a mix will let you feel confident that your CRM
               works for you not you are working for your CRM. Here you will find
@@ -105,7 +107,8 @@ const UdsSalesStart: NextPage = () => {
         <div className={'quickStart section'}>
           <h2 className={'pageTitle'}>UDS Quick start sales</h2>
           <div className={'container content'}>
-            <Image src={quickStart} alt={'Quick Start Map'} />
+            <Image className={"quickStartMapDesktop"} src={quickStartDesktop} alt={'Quick Start Map'} />
+            <Image className={"quickStartMapMobile"} src={quickStartMobile} alt={'Quick Start Map'} />
           </div>
         </div>
         <div className={'objections section'}>
@@ -160,32 +163,35 @@ const UdsSalesStart: NextPage = () => {
         <div className={'serviceRoadmap section'}>
           <h2 className={'pageTitle'}>Service Roadmap</h2>
           <div className={'container content'}>
-            <Image src={roadmap} alt={'Map'} className={'serviceMap'} />
+            <Image src={roadmap} alt={'Map'} className={'serviceMapDesktop'} />
+            <Image src={roadmapMobile} alt={'Map'} className={'serviceMapMobile'} />
           </div>
         </div>
         <div className={'about section'}>
           <h2 className={'pageTitle'}>About us</h2>
-          <div className={'content container'}>
-            <div className={'paragraphSection'}>
-              <p className={'paragraph'}>
-                Since 2007, we provide Dynamics 365 R&D services, migrations,
-                projects, and support services worldwide. We have earned
-                Microsoft Gold Application Development competency. We love our
-                job and aim to keep leadership in the chosen business area.
-                Therefore, we value our reputation as well as long-term
-                relationships and are responsible for the results.
-              </p>
-              <p className={'paragraph'}>
-                By the way, we at UDS Systems also use plenty of Microsoft
-                products built on Dynamics 365 in our inner workings and find
-                these solutions powerful.{' '}
-              </p>
+          <div className={'container'}>
+            <div className={'content'}>
+              <div className={'paragraphSection'}>
+                <p className={'paragraph'}>
+                  Since 2007, we provide Dynamics 365 R&D services, migrations,
+                  projects, and support services worldwide. We have earned
+                  Microsoft Gold Application Development competency. We love our
+                  job and aim to keep leadership in the chosen business area.
+                  Therefore, we value our reputation as well as long-term
+                  relationships and are responsible for the results.
+                </p>
+                <p className={'paragraph'}>
+                  By the way, we at UDS Systems also use plenty of Microsoft
+                  products built on Dynamics 365 in our inner workings and find
+                  these solutions powerful.{' '}
+                </p>
+              </div>
+              <Image
+                className={'partnerLogo'}
+                src={partnerLogo}
+                alt={'Partner Logo'}
+              />
             </div>
-            <Image
-              className={'partnerLogo'}
-              src={partnerLogo}
-              alt={'Partner Logo'}
-            />
           </div>
         </div>
         <BookServiceForm />

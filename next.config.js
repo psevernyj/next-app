@@ -30,5 +30,4 @@ module.exports = {
   images: {
     domains: ['myudssystemsstorageprod.blob.core.windows.net'],
   },
-}
-
+};

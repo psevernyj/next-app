@@ -27,17 +27,13 @@
         margin: initial;
       }
     }
-
-    @media screen and (max-width: 1024px) {
-      padding-top: 37px;
-      padding-bottom: 52px;
-    }
   }
 
   .turnkeySettings {
     .content {
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 20px;
     }
   }
@@ -95,6 +91,7 @@
         font-size: 20px;
         font-weight: 600;
       }
+
       .left {
         text-align: left;
       }
@@ -130,9 +127,9 @@
       grid-gap: 10px;
 
       .title {
-        @include fonts('Montserrat', 600, 18px, 130%);
+        @include fonts('Montserrat', 600, 20px, 130%);
         color: $blue-primary;
-        align-self: center;
+        text-align: center;
       }
 
       .paragraph {
@@ -142,10 +139,13 @@
   }
 
   .resultBenefits {
+    .resultIconMobile{
+      display: none;
+    }
     .block {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+      display: grid;
+      grid-template-rows: 1fr 3fr;
+      grid-gap: 20px;
       text-align: center;
 
       .title {
@@ -155,11 +155,12 @@
         margin: 0;
       }
     }
+
     .content {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
 
-      img {
+      .resultIconDesktop {
         justify-self: center;
         align-self: center;
       }
@@ -170,17 +171,28 @@
         grid-template-rows: 1fr 0.5fr;
         grid-gap: 44px;
       }
-
-      @media screen and (max-width: 1024px) {
-        display: none;
-      }
     }
   }
 
   .serviceRoadmap {
-    .serviceMap {
+    .serviceMapDesktop {
       width: 100%;
       height: auto;
+    }
+
+    .serviceMapMobile {
+      display: none;
+    }
+  }
+
+  .quickStart {
+    .quickStartMapDesktop {
+      width: 100%;
+      height: auto;
+    }
+
+    .quickStartMapMobile {
+      display: none;
     }
   }
 
@@ -206,6 +218,160 @@
 
       .partnerLogo {
         border-left: 1px solid $border;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .firstScreen {
+      //padding-top: 37px;
+      //padding-bottom: 52px;
+      padding-top: 15px;
+      padding-bottom: 19px;
+
+      .container {
+        grid-gap: 10px;
+        .title{
+          max-width: 550px;
+        }
+        .subtitle {
+          max-width: 495px;
+        }
+
+        .subtitle {
+          &:nth-child(3) {
+            margin-top: 10px;
+          }
+        }
+
+        .button {
+          margin-top: 30px;
+        }
+      }
+    }
+    .turnkeySettings{
+      .turnkeyParagraph{
+        width: 80%;
+      }
+    }
+    .benefits {
+      .benefitsList {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 35px;
+        grid-column-gap: 0;
+      }
+
+      .benefit {
+        grid-template-rows: 0.5fr 0.4fr 0.5fr;
+        width: 60%;
+        justify-self: center;
+      }
+    }
+    .objections {
+      .objection {
+        grid-gap: 0;
+        padding: 20px;
+        background-color: #ffff;
+        border-radius: 5px;
+
+        .title {
+          align-self: baseline;
+        }
+      }
+    }
+    .resultBenefits{
+      .resultIconDesktop{
+        display: none;
+      }
+      .resultIconMobile{
+        display: block;
+        text-align: center;
+        margin-bottom: 60px;
+      }
+      .content{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+      }
+    }
+  }
+  @media screen and (max-width: 890px) {
+    .about{
+      .content{
+        flex-direction: column;
+        .paragraphSection{
+          border-bottom: 1px solid $border;
+          padding-bottom: 20px;
+        }
+        .partnerLogo{
+          border-left: none;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 725px) {
+    .benefits {
+      .benefitsList {
+        grid-row-gap: 20px;
+        grid-column-gap: 10px;
+      }
+
+      .benefit {
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .benefits{
+      .benefit{
+        .title{
+          font-size: 18px;
+        }
+      }
+    }
+    .serviceRoadmap {
+      .serviceMapDesktop {
+        display: none;
+      }
+
+      .serviceMapMobile {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+    .quickStart {
+      .pageTitle {
+        display: none;
+      }
+
+      .quickStartMapDesktop {
+        display: none;
+      }
+
+      .quickStartMapMobile {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+    .objections {
+      .objectionList {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+      }
+
+      .objection {
+        padding: 20px 10px;
+        grid-template-rows: 0.6fr 2fr;
+        grid-gap: 10px;
+        .title{
+          font-size: 16px;
+        }
+      }
+    }
+    .about{
+      .content{
+        padding: 20px;
       }
     }
   }

@@ -60,8 +60,8 @@
   max-width: 1106px;
   margin: auto;
   @media screen and (max-width: 1100px) {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }
 
@@ -89,7 +89,7 @@
       line-height: 130%;
     }
     @media only screen and (max-width: 600px) {
-      font-size: 17px;
+      font-size: 15px;
     }
   }
 
@@ -127,6 +127,9 @@
   .paragraph {
     @include fonts('Montserrat', 500, 16px, 140%);
     text-align: center;
+    @media only screen and (max-width: 600px) {
+      font-size: 15px;
+    }
   }
 }
 
