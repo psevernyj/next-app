@@ -1,9 +1,10 @@
+@import '../mixins';
 .casesPage {
   .input {
     width: 342px;
     height: 74px;
-    background: #ffffff;
-    border: 1px solid #c4cbd0;
+    background: $white;
+    border: 1px solid $gray-light;
     border-radius: 5px;
     padding: 20px;
   }

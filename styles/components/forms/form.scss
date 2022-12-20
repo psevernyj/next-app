@@ -1,0 +1,27 @@
+@import '../../mixins';
+
+.needHelpForm {
+  .container {
+    display: grid;
+    grid-template-areas:
+      'a b'
+      'c c';
+    grid-gap: 40px;
+
+    &:first-child {
+      grid-area: a;
+    }
+    &:nth-child(2) {
+      grid-area: b;
+    }
+    &:nth-child(3) {
+      grid-area: c;
+    }
+  }
+  .customCheckbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+  }
+}
