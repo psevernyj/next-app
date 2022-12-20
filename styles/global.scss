@@ -39,13 +39,27 @@
 }
 
 .orangeButton {
-  //background: linear-gradient(269.64deg, #FF8F3E 4.23%, #FFB178 91.19%);
   background-color: $orange-primary;
+  position: relative;
   color: white;
   display: flex;
   align-items: center;
   border-radius: 5px;
   gap: 10px;
+  background-size: 250% 100% !important;
+  background-position: 100% 0% !important;
+
+  &:hover {
+    background: linear-gradient(272.64deg, #ff8f3e 25%, #ffb178 50.19%);
+    background-position: 80% !important;
+    transition: all 0.3s linear;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+    background-position: 60% !important;
+  }
 }
 
 .blueButton {
@@ -53,6 +67,14 @@
   color: $blue-primary;
   border: 2px solid $blue-primary;
   border-radius: 5px;
+  &:hover {
+    transition: all 0.3s linear;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
 }
 
 .container {

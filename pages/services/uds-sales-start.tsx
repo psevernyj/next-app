@@ -107,8 +107,16 @@ const UdsSalesStart: NextPage = () => {
         <div className={'quickStart section'}>
           <h2 className={'pageTitle'}>UDS Quick start sales</h2>
           <div className={'container content'}>
-            <Image className={"quickStartMapDesktop"} src={quickStartDesktop} alt={'Quick Start Map'} />
-            <Image className={"quickStartMapMobile"} src={quickStartMobile} alt={'Quick Start Map'} />
+            <Image
+              className={'quickStartMapDesktop'}
+              src={quickStartDesktop}
+              alt={'Quick Start Map'}
+            />
+            <Image
+              className={'quickStartMapMobile'}
+              src={quickStartMobile}
+              alt={'Quick Start Map'}
+            />
           </div>
         </div>
         <div className={'objections section'}>
@@ -164,7 +172,11 @@ const UdsSalesStart: NextPage = () => {
           <h2 className={'pageTitle'}>Service Roadmap</h2>
           <div className={'container content'}>
             <Image src={roadmap} alt={'Map'} className={'serviceMapDesktop'} />
-            <Image src={roadmapMobile} alt={'Map'} className={'serviceMapMobile'} />
+            <Image
+              src={roadmapMobile}
+              alt={'Map'}
+              className={'serviceMapMobile'}
+            />
           </div>
         </div>
         <div className={'about section'}>

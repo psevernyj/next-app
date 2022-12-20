@@ -139,9 +139,10 @@
   }
 
   .resultBenefits {
-    .resultIconMobile{
+    .resultIconMobile {
       display: none;
     }
+
     .block {
       display: grid;
       grid-template-rows: 1fr 3fr;
@@ -170,6 +171,36 @@
         display: grid;
         grid-template-rows: 1fr 0.5fr;
         grid-gap: 44px;
+      }
+    }
+  }
+
+  .aboutCase {
+    .content {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1.5fr;
+      align-items: center;
+
+      .lightningIcon {
+        justify-self: center;
+        align-self: stretch;
+      }
+
+      .paragraph {
+        @include fonts('Montserrat', 600, 18px, 130%);
+        letter-spacing: 0.01em;
+        color: $black-primary;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .left {
+        text-align: left;
+      }
+
+      .right {
+        text-align: right;
       }
     }
   }
@@ -231,9 +262,11 @@
 
       .container {
         grid-gap: 10px;
-        .title{
+
+        .title {
           max-width: 550px;
         }
+
         .subtitle {
           max-width: 495px;
         }
@@ -249,8 +282,8 @@
         }
       }
     }
-    .turnkeySettings{
-      .turnkeyParagraph{
+    .turnkeySettings {
+      .turnkeyParagraph {
         width: 80%;
       }
     }
@@ -262,7 +295,7 @@
       }
 
       .benefit {
-        grid-template-rows: 0.5fr 0.4fr 0.5fr;
+        grid-template-rows: 0.5fr 0.5fr 1.5fr;
         width: 60%;
         justify-self: center;
       }
@@ -279,30 +312,34 @@
         }
       }
     }
-    .resultBenefits{
-      .resultIconDesktop{
+    .resultBenefits {
+      .resultIconDesktop {
         display: none;
       }
-      .resultIconMobile{
+
+      .resultIconMobile {
         display: block;
         text-align: center;
         margin-bottom: 60px;
       }
-      .content{
+
+      .content {
         grid-template-columns: 1fr 1fr;
         grid-gap: 40px;
       }
     }
   }
   @media screen and (max-width: 890px) {
-    .about{
-      .content{
+    .about {
+      .content {
         flex-direction: column;
-        .paragraphSection{
+
+        .paragraphSection {
           border-bottom: 1px solid $border;
           padding-bottom: 20px;
         }
-        .partnerLogo{
+
+        .partnerLogo {
           border-left: none;
         }
       }
@@ -321,10 +358,48 @@
     }
   }
   @media screen and (max-width: 600px) {
-    .benefits{
-      .benefit{
-        .title{
+    .firstScreen {
+      .container {
+        .title {
+          max-width: 294px;
+        }
+
+        .subtitle {
+          max-width: 269px;
+        }
+
+        .button {
+          max-width: 237px;
+          padding: 0 !important;
+        }
+      }
+    }
+    .turnkeySettings {
+      .turnkeyParagraph {
+        width: 100%;
+      }
+    }
+    .benefits {
+      .benefit {
+        .benefitIcon {
+          margin-bottom: 0;
+        }
+        .title {
           font-size: 18px;
+        }
+      }
+    }
+    .aboutCase {
+      .content {
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+        .lightningIcon {
+          width: 119px;
+        }
+
+        .left,
+        .right {
+          text-align: center;
         }
       }
     }
@@ -354,6 +429,19 @@
         height: auto;
       }
     }
+    .resultBenefits {
+      .lampIcon {
+        width: 135px;
+      }
+      .content {
+        grid-template-columns: 1fr;
+        grid-gap: 60px;
+        .left,
+        .right {
+          grid-gap: 60px;
+        }
+      }
+    }
     .objections {
       .objectionList {
         grid-template-columns: 1fr;
@@ -364,13 +452,14 @@
         padding: 20px 10px;
         grid-template-rows: 0.6fr 2fr;
         grid-gap: 10px;
-        .title{
+
+        .title {
           font-size: 16px;
         }
       }
     }
-    .about{
-      .content{
+    .about {
+      .content {
         padding: 20px;
       }
     }

@@ -8,9 +8,9 @@ import lightningIcon from '../../assets/services/customer-services/lightning_ico
 import lampIcon from '../../assets/services/customer-services/lamp_icon.svg';
 import roadmap from '../../assets/services/customer-services/cs_roadmap.webp';
 import partnerLogo from '../../assets/services/microsoft_365_sales/partner_logo.svg';
-import roadmapMobile from "../../assets/services/microsoft_365_sales/roadmap_mobile.webp";
-import quickStartDesktop from "../../assets/services/customer-services/cs_sales_map.svg";
-import quickStartMobile from "../../assets/services/customer-services/cs-sales-map-mobile.svg";
+import roadmapMobile from '../../assets/services/microsoft_365_sales/roadmap_mobile.webp';
+import quickStartDesktop from '../../assets/services/customer-services/cs_sales_map.svg';
+import quickStartMobile from '../../assets/services/customer-services/cs-sales-map-mobile.svg';
 
 const BookServiceForm = dynamic(
   () => import('../../components/forms/BookServiceForm')
@@ -107,22 +107,50 @@ const UdsCustomerService: NextPage = () => {
           </div>
         </div>
         <div className={'aboutCase section'}>
-          <h2 className={'pageTitle'}>About Dynamics 365 Customer Service superpower</h2>
+          <h2 className={'pageTitle container'}>
+            About Dynamics 365 Customer Service superpower
+          </h2>
           <div className={'container'}>
-
+            <div className={'content'}>
+              <div className={'paragraph left'}>
+                <p>Automation of all service processes</p>
+                <p>Visualization of key customer service statistics</p>
+                <p>Сustomized reporting for the client care department</p>
+                <p>Easy management of tasks and notifications</p>
+              </div>
+              <Image
+                className={'lightningIcon'}
+                src={lightningIcon}
+                alt={'icon'}
+              />
+              <div className={'paragraph right'}>
+                <p>Fast customer identification</p>
+                <p>Convenient storage of client profiles</p>
+                <p>Increasing customer loyalty</p>
+                <p>Ensuring a responsive support</p>
+              </div>
+            </div>
           </div>
         </div>
         <div className={'quickStart section'}>
           <h2 className={'pageTitle'}>UDS Quick start sales</h2>
           <div className={'container content'}>
-            <Image className={"quickStartMapDesktop"} src={quickStartDesktop} alt={'Quick Start Map'} />
-            <Image className={"quickStartMapMobile"} src={quickStartMobile} alt={'Quick Start Map'} />
+            <Image
+              className={'quickStartMapDesktop'}
+              src={quickStartDesktop}
+              alt={'Quick Start Map'}
+            />
+            <Image
+              className={'quickStartMapMobile'}
+              src={quickStartMobile}
+              alt={'Quick Start Map'}
+            />
           </div>
         </div>
         <div className={'resultBenefits section'}>
           <h2 className={'pageTitle'}>You will be pleased to know</h2>
-          <div className={"resultIconMobile container"}>
-            <Image src={lampIcon} alt={'Lamp Icon'} />
+          <div className={'resultIconMobile container'}>
+            <Image className={'lampIcon'} src={lampIcon} alt={'Lamp Icon'} />
           </div>
           <div className="content container">
             <div className="left">
@@ -145,8 +173,8 @@ const UdsCustomerService: NextPage = () => {
                 </p>
               </div>
             </div>
-            <div className={"resultIconDesktop"}>
-              <Image src={lampIcon} alt={'Lamp Icon'} />
+            <div className={'resultIconDesktop'}>
+              <Image className={'lampIcon'} src={lampIcon} alt={'Lamp Icon'} />
             </div>
             <div className="right">
               <div className="block">
@@ -174,7 +202,11 @@ const UdsCustomerService: NextPage = () => {
           <h2 className={'pageTitle'}>Service Roadmap</h2>
           <div className={'container content'}>
             <Image src={roadmap} alt={'Map'} className={'serviceMapDesktop'} />
-            <Image src={roadmapMobile} alt={'Map'} className={'serviceMapMobile'} />
+            <Image
+              src={roadmapMobile}
+              alt={'Map'}
+              className={'serviceMapMobile'}
+            />
           </div>
         </div>
         <div className={'about section'}>
