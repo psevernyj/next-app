@@ -5,7 +5,8 @@
     display: grid;
     grid-template-areas:
       'a b'
-      'c c';
+      'c c'
+      'd d';
     grid-gap: 40px;
 
     &:first-child {
@@ -16,6 +17,9 @@
     }
     &:nth-child(3) {
       grid-area: c;
+    }
+    &:nth-child(4) {
+      grid-area: d;
     }
   }
   .customCheckbox + label {

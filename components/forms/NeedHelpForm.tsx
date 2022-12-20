@@ -38,14 +38,6 @@ const NeedHelpForm = () => {
           label={'Accept Privacy Policy'}
           required={true}
         />
-        <input
-          className={'customCheckbox'}
-          type={'checkbox'}
-          placeholder={'checkbox'}
-          id={'checkbox'}
-          name={'checkbox'}
-          required={true}
-        />
       </div>
     </div>
   );
