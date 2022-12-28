@@ -13,14 +13,11 @@ const Checkbox = ({
 }) => {
   return (
     <div className={'inputItem'}>
-      <label htmlFor={id}>{label}</label>
-      <input
-        className={'customCheckbox'}
-        type={'checkbox'}
-        name={inputName}
-        id={id}
-        required={required}
-      />
+      <label htmlFor={id} className={'customCheckbox'}>
+        {label}
+        <input type={'checkbox'} name={inputName} id={id} required={required} />
+        <span className={'checkmark'}></span>
+      </label>
     </div>
   );
 };
