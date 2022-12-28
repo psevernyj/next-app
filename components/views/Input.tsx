@@ -24,6 +24,7 @@ const Input = ({
         id={id}
         required={required}
       />
+      {/*{errors.exampleRequired &&  <span className={"fieldError"}>{errorMessage}</span>}*/}
     </div>
   );
 };

@@ -1,8 +1,32 @@
 import React from 'react';
-import Input from '../views/Input';
 import Checkbox from '../views/Checkbox';
+import {
+  FieldErrors,
+  useForm,
+  UseFormRegisterReturn,
+} from 'react-hook-form';
+import InputTest from '../views/InputTest';
+
+export type NeedHelpFormData = {
+  name: string;
+  email: string;
+  message: string;
+  acceptPrivacy: boolean;
+  register: Array<UseFormRegisterReturn>;
+  errors: FieldErrors;
+};
 
 const NeedHelpForm = () => {
+  const {
+    handleSubmit,
+    register,
+    formState: { errors },
+  } = useForm<NeedHelpFormData>();
+
+  const onSubmit = handleSubmit((data) => {
+    console.log(data, 'NeedHelpForm');
+  });
+
   return (
     <div className={'section'}>
       <h2 className={'pageTitle'}>Need Help?</h2>
@@ -11,33 +35,52 @@ const NeedHelpForm = () => {
         favorable cost for beneficial changes.
       </p>
       <div className={'container'}>
-        <form className={'formContainer needHelpForm'}>
-          <Input
+        <form className={'formContainer needHelpForm'} onSubmit={onSubmit}>
+          <InputTest
+            errors={errors}
+            id={'name'}
+            name={'name'}
             type={'text'}
             placeholder={'Name'}
-            id={'name'}
-            inputName={'name'}
-            required={true}
+            register={register}
+            options={{
+              required: true,
+            }}
           />
-          <Input
-            type={'email'}
-            placeholder={'E-mail'}
+          <InputTest
+            errors={errors}
             id={'email'}
-            inputName={'email'}
-            required={true}
+            name={'email'}
+            type={'text'}
+            placeholder={'E-mail'}
+            register={register}
+            options={{
+              required: true,
+              pattern: {
+                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                message: 'Type valid e-mail',
+              },
+            }}
           />
-          <Input
+          <InputTest
+            errors={errors}
+            id={'message'}
+            name={'message'}
             type={'textarea'}
             placeholder={'Message'}
-            id={'message'}
-            inputName={'message'}
-            required={false}
+            register={register}
+            options={{
+              required: false,
+            }}
           />
           <Checkbox
-            id={'agreements'}
-            inputName={'acceptPrivacy'}
+            id={'acceptPrivacy'}
+            name={'acceptPrivacy'}
             label={'Accept Privacy Policy'}
-            required={true}
+            register={register}
+            options={{
+              required: true,
+            }}
           />
           <button className={'button orangeButton bigButton'}>Send</button>
         </form>
