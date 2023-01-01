@@ -13,10 +13,24 @@
     @include fonts('Montserrat', 500, 16px, 140%);
     padding: 20px;
     color: $gray-light;
+    transition: all 0.3s ease-in-out;
 
     &:focus {
       color: $black-primary;
+      border-color: #c4cbd0;
     }
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  .textarea {
+    height: 145px;
+    max-width: 1095px;
   }
 
   .required::after {
@@ -77,5 +91,13 @@
     &:hover input ~ .checkmark {
       background-color: #f6f6f6;
     }
+  }
+
+  .fieldError {
+    @include fonts('Montserrat', 500, 16px, 140%);
+    color: $red;
+    position: absolute;
+    left: 20px;
+    top: 65px;
   }
 }

@@ -1,30 +1,46 @@
 import React from 'react';
+import { FieldErrorsImpl, ValidationRule } from 'react-hook-form';
 
 const Input = ({
+  id,
+  name,
   type,
   placeholder,
-  inputName,
-  id,
-  required,
+  errors,
+  register,
+  options,
 }: {
+  id: string;
+  name: string;
   type: string;
   placeholder: string;
-  inputName: string;
-  id: string;
-  required: boolean;
+
+  errors: Partial<FieldErrorsImpl>;
+  register: any;
+  options?: Partial<{
+    required: string | ValidationRule<boolean>;
+    min: ValidationRule<string | number>;
+    max: ValidationRule<string | number>;
+    pattern: { value: RegExp; message: string };
+  }>;
 }) => {
   return (
     <div className={'inputItem'}>
-      {required && <span className={'required'}></span>}
+      {options?.required && <span className={'required'}></span>}
       <input
+        {...register(name, options)}
         className={'input'}
         type={type}
         placeholder={placeholder}
-        name={inputName}
+        name={name}
         id={id}
-        required={required}
       />
-      {/*{errors.exampleRequired &&  <span className={"fieldError"}>{errorMessage}</span>}*/}
+      {errors[name]?.type === 'required' && (
+        <span className={'fieldError'}>Field is required</span>
+      )}
+      {/*{errors[name]?.type === 'pattern' && (*/}
+      {/*  <span className={'fieldError'}>{errors[name].message}</span>*/}
+      {/*)}*/}
     </div>
   );
 };

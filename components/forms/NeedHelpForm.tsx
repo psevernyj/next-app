@@ -1,11 +1,8 @@
 import React from 'react';
 import Checkbox from '../views/Checkbox';
-import {
-  FieldErrors,
-  useForm,
-  UseFormRegisterReturn,
-} from 'react-hook-form';
-import InputTest from '../views/InputTest';
+import { FieldErrors, useForm, UseFormRegisterReturn } from 'react-hook-form';
+import Input from '../views/Input';
+import Textarea from '../views/Textarea';
 
 export type NeedHelpFormData = {
   name: string;
@@ -36,7 +33,7 @@ const NeedHelpForm = () => {
       </p>
       <div className={'container'}>
         <form className={'formContainer needHelpForm'} onSubmit={onSubmit}>
-          <InputTest
+          <Input
             errors={errors}
             id={'name'}
             name={'name'}
@@ -47,7 +44,7 @@ const NeedHelpForm = () => {
               required: true,
             }}
           />
-          <InputTest
+          <Input
             errors={errors}
             id={'email'}
             name={'email'}
@@ -62,11 +59,10 @@ const NeedHelpForm = () => {
               },
             }}
           />
-          <InputTest
+          <Textarea
             errors={errors}
             id={'message'}
             name={'message'}
-            type={'textarea'}
             placeholder={'Message'}
             register={register}
             options={{

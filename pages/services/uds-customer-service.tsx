@@ -11,16 +11,9 @@ import partnerLogo from '../../assets/services/microsoft_365_sales/partner_logo.
 import roadmapMobile from '../../assets/services/microsoft_365_sales/roadmap_mobile.webp';
 import quickStartDesktop from '../../assets/services/customer-services/cs_sales_map.svg';
 import quickStartMobile from '../../assets/services/customer-services/cs-sales-map-mobile.svg';
-
-const BookServiceForm = dynamic(
-  () => import('../../components/forms/BookServiceForm')
-);
-const OurCases = dynamic(
-  () => import('../../components/sharedComponents/OurCases')
-);
-const Contacts = dynamic(
-  () => import('../../components/sharedComponents/Contacts')
-);
+import BookServiceForm from '../../components/forms/BookServiceForm';
+import Contacts from '../../components/sharedComponents/Contacts';
+import OurCases from '../../components/sharedComponents/OurCases';
 
 const UdsCustomerService: NextPage = () => {
   return (

@@ -11,6 +11,8 @@ $light-bg: #f9faff;
 
 $border: #e1e5e8;
 
+$red: #ab0b23;
+
 @mixin fonts($family, $weight, $size, $line-height) {
   font-family: $family;
   font-weight: $weight;

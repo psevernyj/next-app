@@ -10,7 +10,7 @@ const ServiceComponent: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={'main'}>
-        <h1 className={'title'}>servicePage page</h1>
+        <h1>servicePage page</h1>
       </main>
     </div>
   );

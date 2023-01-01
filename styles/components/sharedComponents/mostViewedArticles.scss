@@ -8,52 +8,6 @@
     margin-bottom: 40px;
   }
 
-  .card {
-    width: 100%;
-    max-width: 342px;
-    height: 400px;
-    background-color: $light-bg;
-    border-radius: 5px;
-
-    .imageContent {
-      position: relative;
-
-      .thumbnail {
-        height: 174px;
-      }
-
-      .icon {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        width: 44px;
-        height: 44px;
-      }
-    }
-
-    .content {
-      padding: 15px 20px;
-      display: grid;
-      grid-template-rows: 0.5fr 2fr 1fr;
-      grid-gap: 15px;
-
-      .publicDate {
-        @include fonts('Montserrat', 500, 14px, 140%);
-        color: $black-primary;
-      }
-
-      .title {
-        @include fonts('Montserrat', 600, 19px, 23px);
-        color: $blue-primary;
-      }
-
-      .actions {
-        display: flex;
-        justify-content: space-between;
-      }
-    }
-  }
-
   @media screen and (max-width: 1125px) {
     .articleCards {
       justify-content: center;

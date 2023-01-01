@@ -7,7 +7,12 @@ const ClientsGeography = () => {
     <div className={'clientsGeography section'}>
       <h2 className={'pageTitle'}>our Clients geography</h2>
       <div className={'container'}>
-        <Image src={map} alt={'Map'} />
+        <Image
+          src={map}
+          alt={'Map'}
+          className={'clientsGeographyMap'}
+          priority
+        />
       </div>
     </div>
   );
