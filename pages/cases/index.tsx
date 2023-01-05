@@ -17,6 +17,7 @@ const CasesComponent: NextPage = () => {
       <Head>
         <title>Our Cases | UDS Systems</title>
         <meta property="title" key="title" content="Our Cases | UDS Systems" />
+        <meta property="title" key="title" content="Our Cases | UDS Systems" />
         <meta
           name="description"
           key="description"

@@ -1,0 +1,110 @@
+@import '../../mixins';
+
+.authorCard {
+  perspective: 150rem;
+  position: relative;
+  height: 211px;
+  &:hover{
+    .front{
+      transform: rotateY(180deg);
+    }
+    .back{
+      transform: rotateY(0deg);
+    }
+  }
+
+  .cardSide {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 3px 6px rgba(14, 31, 53, 0.08),
+      0px 6px 12px rgba(14, 31, 53, 0.12), 0px 8px 24px rgba(14, 31, 53, 0.08);
+    border-radius: 5px;
+    transition: all 0.8s ease;
+    height: 211px;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .back{
+    transform: rotateY(-180deg);
+  }
+
+  .leftSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-right: 20px;
+    .name {
+      @include fonts('Montserrat', 600, 20px, 130%);
+      color: $blue-primary;
+      padding-top: 8px;
+    }
+    .position {
+      @include fonts('Montserrat', 400, 14px, 120%);
+      color: $gray-secondary;
+    }
+  }
+  .rightSection {
+    border-left: 1px solid $gray-light;
+    padding-left: 20px;
+    align-self: center;
+    .mark {
+      @include fonts('Montserrat', 400, 14px, 159%);
+      background-color: $dark-bg;
+      color: $blue-primary;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .articleCount {
+      width: 59px;
+      height: 30px;
+      gap: 5px;
+    }
+    .experience {
+      width: 189px;
+      height: 30px;
+      gap: 10px;
+    }
+    .content {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-gap: 10px;
+      align-items: center;
+      .description {
+        @include fonts('Montserrat', 500, 16px, 140%);
+        color: $blue-primary;
+      }
+      .certification {
+        display: grid;
+        grid-template-rows: 3fr 1fr;
+        grid-gap: 5px;
+        align-items: center;
+        justify-items: center;
+        .certificationCount {
+          @include fonts('Montserrat', 400, 14px, 120%);
+          color: $gray-secondary;
+        }
+      }
+    }
+    .certificateContainer{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      .title{
+        @include fonts('Montserrat', 600, 10px, 120%);
+        color: $blue-primary;
+      }
+      .certificate{
+        padding: 4px 10px;
+        gap: 10px;
+        justify-content: flex-start;
+      }
+    }
+  }
+}

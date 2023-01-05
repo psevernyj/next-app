@@ -2,6 +2,7 @@ import { NextPage } from 'next';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import { termsItems } from '../../utils/privacyAndTermsData';
+import React from 'react';
 
 const Accordion = dynamic(() => import('../../components/views/Accordion'));
 const Contacts = dynamic(
@@ -13,6 +14,16 @@ const TermsAndConditionsComponent: NextPage = () => {
     <div>
       <Head>
         <title>Terms and Conditions | UDS Systems</title>
+        <meta
+          property="title"
+          key="title"
+          content="Terms and conditions | UDS Systems"
+        />
+        <meta
+          name="description"
+          key="description"
+          content="Terms and conditions. UDS Systems. By accessing UDS System’s websites we assume you accept these terms and conditions in full."
+        />
       </Head>
       <main className={'main privacyAndTerms'}>
         <div className={'firstScreen terms'}>
