@@ -3,6 +3,8 @@ import Head from 'next/head';
 import React from 'react';
 import PopularAuthors from '../../components/sharedComponents/PopularAuthors';
 import { authorsCards } from '../../utils/authorsCardData';
+import SubscribeToNewsForm from "../../components/forms/SubscribeToNewsForm";
+import Contacts from "../../components/sharedComponents/Contacts";
 
 const BlogComponent: NextPage = () => {
   return (
@@ -54,6 +56,20 @@ const BlogComponent: NextPage = () => {
           </div>
         </div>
         <PopularAuthors cards={authorsCards} />
+        <div className={'latestNews section'}>
+          <h2 className={'pageTitle'}>Latest news</h2>
+          <div className={'slider container'}>slider</div>
+        </div>
+        <div className={'allArticles section'}>
+          <h2 className={'pageTitle'}>All Articles</h2>
+          <div className={'container content'}>
+          </div>
+        </div>
+        <div className={"popularArticles section"}>
+          <h2 className={"pageTitle"}>Popular Articles</h2>
+        </div>
+        <SubscribeToNewsForm/>
+        <Contacts/>
       </main>
     </>
   );
